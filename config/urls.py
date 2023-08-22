@@ -16,7 +16,21 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf import settings
+from django.conf.urls.static import static
+from smiledesign_home.views import home_page,about_page,services_page,doctors_page, blog_page,contact_page,blog_detail_page
+
 
 urlpatterns = [
+    path('', home_page, name='home_page'),
+    path('about/', about_page,name='about_page'),
+    path('services/', services_page,name='services_page'),
+    path('doctors/', doctors_page, name='doctors_page'),
+    path('blog/', blog_page, name='blog_page'),
+    path('contact/', contact_page, name='contact_page'),
+    path('blog/<int:id>/', blog_detail_page, name='blog_detail_page'),
     path('admin/', admin.site.urls),
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

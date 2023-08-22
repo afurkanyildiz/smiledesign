@@ -1,0 +1,309 @@
+{% extends 'core/base.html'%}
+{% load static %}
+
+{% block container %}
+
+<div class="inner-page-banner">
+    <div class="inner-banner-top">
+        <img class="inner-banner-vec-2 img-fluid " src="assets/images/bg/inner-banner-vec-1.png" alt="">
+        <img class="inner-banner-vec-1 img-fluid" src="assets/images/bg/inner-banner-vec-2.png" alt="">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8">
+                    <div class="inner-banner-title">
+                        <h2>I Provided Alawyes <br>
+                        <span>Creative Work.</span></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="breadcrumb-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-sm-end justify-content-center">
+                        <div class="inner-breadcrumb">
+                            <h2>Blog Details</h2>
+                            <nav>
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Blog Details</li>
+                                </ol>
+                                </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ========== breadcump end============= -->
+
+<!-- ==========Blog Start============= -->
+<div class="blog-details pt-120 mb-120">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 order-lg-1 order-2 wow animate fadeInDown" data-wow-delay="200ms" data-wow-duration="1500ms">
+                <div class="blog-dt-wrrap">
+                    <div class="blog-dt-img">
+                        <img class="img-fluid" src="{{ blog.image.url }}" alt="">
+                    </div>
+                    <div class="blog-dt-content">
+                        <div class="publisher-area">
+                            <ul>
+                                <li><i class='bx bx-user'></i>By, Admin</li>
+                                <li><i class='bx bx-calendar'></i>25 May, 2022</li>
+                                <li><i class="bi bi-chat-dots"></i>Comments (02)</li>
+                            </ul>
+                        </div>
+                        <h2>Nullam feugiat et quam in accumsan.</h2>
+                        <p class="para">Sed pretium purus ultricies nunc vehicula eleifend. Cras ut ligula sed eros tempor euismod. Praesent nona sodales neque. Maecenas a finibus metus, et consequat lorem. Maecenas tempus consectetur finibus.velit Morbi vel efficitur augue. Sed in accumsan turpis, vel fringilla arcu. Sed sit amet turpis a arcu feugiat telal porttitor. Donec sodales purus mauris, nec mollis nulla sodales vitae. Nulla elit ex, faucibus ac facilisis andi velaAliquam erat volutpat. Nulla gravida vehicula mattis. Pellentesque vel lectus eget elit pulvinar thoseni condimentum in ut felis. Donec ut mi et nisl vestibulum rhoncus. Nam et ultrices ipsum. posuere, blandit go eget augue Integer condimentum.</p>  
+                
+                        <p class="para mb-40">Aliquam erat volutpat. Nulla gravida vehicula mattis. Pellentesque vel lectus eget elit pulvinar for this gooi condimentum in ut felis. Donec ut mi et nisl vestibulum rhoncus. Nam et ultrices ipsum. Integer in massage eget turpis consequat molestie. Vestibulum feugiat semper leo eget sagittis. Duis sed odio vulputatelcoma lorem posuere tincidunt.</p>  
+                        {% comment %} <div class="blog-tag">
+                            <div class="row g-3">
+                                <div class="col-md-6 d-flex justify-content-md-start justify-content-center align-items-center">
+                                    <h4>Share On:</h4>
+                                    <ul class="social-icon d-flex align-items-center flex-wrap">
+                                        <li><a href="https://www.facebook.com/"><i class="bx bxl-facebook"></i></a></li>
+                                        <li><a href="https://twitter.com/"><i class="bx bxl-twitter"></i></a></li>
+                                        <li><a href="https://www.pinterest.com/"><i class="bx bxl-pinterest-alt"></i></a></li>
+                                        <li><a href="https://www.instagram.com/"><i class="bx bxl-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 d-flex justify-content-md-end justify-content-center align-items-center">
+                                    <ul class="tag-list d-flex flex-wrap">
+                                        <li><a href="#">Website</a></li>
+                                        <li><a href="#">Web Design</a></li>
+                                        <li><a href="#">Development</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> {% endcomment %}
+                        {% comment %} <div class="page-navigation-area">
+                            <div class="row g-4">
+                                <div class="col-lg-3 d-flex ptt-20 align-items-center justify-content-center justify-content-lg-start">
+                                    <a class="prev" href="#">
+                                        <svg width="31" height="16" viewBox="0 0 31 16" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M7.76882 15.0007C8.13338 14.8885 8.33784 14.5147 8.24202 14.1422C8.21799 14.0317 7.23041 13.0281 5.29691 11.1255L2.39369 8.26588L16.0293 8.19533L29.6708 8.11892L29.8351 7.99587C29.9231 7.93141 30.0402 7.76777 30.0867 7.63358C30.1623 7.41769 30.1562 7.37111 30.0671 7.19089C30.0137 7.08043 29.8954 6.94112 29.8068 6.88324C29.6533 6.78486 29.0233 6.78177 16.0175 6.82047L2.38765 6.8677L5.23674 4.01235C6.80787 2.44422 8.12086 1.08694 8.14991 0.99943C8.29548 0.620108 8.14674 0.265375 7.78106 0.115482C7.3682 -0.0516855 7.45032 -0.121951 3.62804 3.69888C1.22444 6.09787 0.052136 7.3089 0.0290644 7.41969C0.00589212 7.50718 0.00649611 7.647 0.0304486 7.74012C0.0544513 7.84487 1.23127 9.03993 3.62598 11.4007C6.66518 14.3879 7.43366 15.1012 7.58065 15.054C7.59242 15.0539 7.67473 15.0245 7.76882 15.0007Z" />
+                                        </svg>
+                                        Prev Post</a>
+                                </div>
+                                <div class="col-lg-6 d-flex justify-content-center">
+                                    <h4>Curabitur quis iaculis sapien</h4>
+                                </div>
+                                <div class="col-lg-3 d-flex mbb-20 align-items-center justify-content-center justify-content-lg-end">
+                                    <a class="next" href="#">Next Post
+                                        <svg width="31" height="16" viewBox="0 0 31 16" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M22.4313 0.0952265C22.0661 0.205017 21.8592 0.57746 21.9525 0.950568C21.9758 1.06122 22.9569 2.0713 24.8779 3.98646L27.7623 6.865L14.1265 6.84643L0.484815 6.83367L0.319743 6.95565C0.231302 7.01953 0.113142 7.1824 0.0657449 7.31629C-0.0112326 7.53168 -0.00543762 7.5783 0.0824619 7.7591C0.135216 7.8699 0.252607 8.00998 0.340778 8.06844C0.493658 8.16782 1.12364 8.17503 14.1294 8.22134L27.7592 8.26319L24.8915 11.0999C23.3102 12.6577 21.9884 14.0064 21.9587 14.0937C21.8107 14.472 21.9571 14.8277 22.3218 14.98C22.7336 15.1499 22.651 15.2196 26.4982 11.4238C28.9174 9.0406 30.0976 7.83727 30.1214 7.72663C30.1451 7.63929 30.1454 7.49947 30.1221 7.4062C30.0988 7.30129 28.9298 6.09856 26.5506 3.72217C23.531 0.715166 22.7672 -0.00312928 22.6199 0.0431444C22.6081 0.0431183 22.5256 0.0720353 22.4313 0.0952265Z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div> {% endcomment %}
+                        {% comment %} <div class="comments-area">
+                            <div class="comment-title">
+                                <h3>Comment</h3>
+                            </div>
+                            <div class="comment-wrrap d-flex">
+                                <div class="comment-img">
+                                    <img src="assets/images/blog/author-1.png" alt="">
+                                </div>
+                                <div class="comment-content">
+                                    <div class="top-area d-flex justify-content-between align-items-center">
+                                        <div class="author-name">
+                                            <h4>Polard Girdet</h4>
+                                        </div>
+                                        <div class="date">11 January, 2022 At 01.56 pm</div>
+                                    </div>
+                                    <p>Aliquam erat volutpat. Nulla gravida vehicula mattis. Pellentesque vel lectus eget elit pulvina for this gooi condimentum in ut felis. Donec ut mi et nisl vestibulum rhoncus. Nam et ultrices ipsum. Integer in massage eget turpis consequat molestie.</p>
+                                    <div class="reply-btn">
+                                        <a href="#"><i class="bi bi-reply"></i>Reply</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment-wrrap d-flex mb-120">
+                                <div class="comment-img">
+                                    <img src="assets/images/blog/author-2.png" alt="">
+                                </div>
+                                <div class="comment-content">
+                                    <div class="top-area d-flex justify-content-between align-items-center">
+                                        <div class="author-name">
+                                            <h4>Urduna Kurnago</h4>
+                                        </div>
+                                        <div class="date">11 January, 2022 At 01.56 pm</div>
+                                    </div>
+                                    <p>Aliquam erat volutpat. Nulla gravida vehicula mattis. Pellentesque vel lectus eget elit pulvina for this gooi condimentum in ut felis. Donec ut mi et nisl vestibulum rhoncus. Nam et ultrices ipsum. Integer in massage eget turpis consequat molestie.</p>
+                                    <div class="reply-btn">
+                                        <a href="#"><i class="bi bi-reply"></i>Reply</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment-title">
+                                <h3>Leave A Comment</h3>
+                            </div>
+                            <div class="comment-form">
+                                <form action="#">
+                                    <div class="row">
+                                        <div class="col-xl-6 col-lg-12 col-md-6">
+                                            <div class="form-inner">
+                                                <label>Name*</label>
+                                                <input type="text" placeholder="Enter Your Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-12 col-md-6">
+                                            <div class="form-inner">
+                                                <label>Email*</label>
+                                                <input type="email" placeholder="Enter Your Email">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-inner">
+                                                <label>Message*</label>
+                                                <textarea name="message" placeholder="Type your Message" rows="12"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <button type="submit" class="eg-btn btn--primary btn--md form--btn">Submit Comment</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div> {% endcomment %}
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 order-lg-2 order-1">
+                <div class="blog-sidebar">
+                    <div class="blog-widget-item wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                        <div class="search-area">
+                            <div class="blog-widget-body1">
+                                <form>
+                                    <div class="form-inner">
+                                        <input type="text" placeholder="Search...">
+                                        <button class="search--btn"><i class='bx bx-search'></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-widget-item wow animate fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div class="blog-category">
+                            <div class="sidebar-widget-title">
+                                <h4>Recent Post</h4>
+                                <span></span>
+                            </div>
+                            <div class="blog-widget-body">
+                                <ul class="recent-post">
+                                    <li class="single-post d-flex align-items-center">
+                                        <div class="post-img">
+                                            <a href="blog-details.html"><img alt="image" src="assets/images/blog/blog-sb-1.png"></a>
+                                        </div>
+                                        <div class="post-content">
+                                            <h6><a href="blog-details.html">In a augue sit ametanibi erat Suspel...</a>
+                                            </h6>
+                                            <span><i class='bx bx-calendar'></i>25 May, 2022</span>
+                                        </div>
+                                    </li>
+                                    <li class="single-post d-flex align-items-center">
+                                        <div class="post-img">
+                                            <a href="blog-details.html"><img alt="image" src="assets/images/blog/blog-sb-2.png"></a>
+                                        </div>
+                                        <div class="post-content">
+                                            <h6><a href="blog-details.html">Interdum et malesuada famesa ac ante...</a>
+                                            </h6>
+                                            <span><i class='bx bx-calendar'></i>25 May, 2022</span>
+                                        </div>
+                                    </li>
+                                    <li class="single-post d-flex align-items-center">
+                                        <div class="post-img">
+                                            <a href="blog-details.html"><img alt="image" src="assets/images/blog/blog-sb-3.png"></a>
+                                        </div>
+                                        <div class="post-content">
+                                            <h6><a href="blog-details.html">tincidunt elementum nisl bland....</a>
+                                            </h6>
+                                            <span><i class='bx bx-calendar'></i>25 May, 2022</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    {% comment %} <div class="blog-widget-item wow animate fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+                        <div class="top-blog">
+                            <div class="sidebar-widget-title">
+                                <h4>Categories</h4>
+                                <span></span>
+                            </div>
+                            <div class="blog-widget-body">
+                                <ul class="category-list">
+                                    <li><a href="blog-standard.html"><span>New Technology</span><span><svg width="31" height="16" viewBox="0 0 31 16" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M22.4313 0.0952265C22.0661 0.205017 21.8592 0.57746 21.9525 0.950568C21.9758 1.06122 22.9569 2.0713 24.8779 3.98646L27.7623 6.865L14.1265 6.84643L0.484815 6.83367L0.319743 6.95565C0.231302 7.01953 0.113142 7.1824 0.0657449 7.31629C-0.0112326 7.53168 -0.00543762 7.5783 0.0824619 7.7591C0.135216 7.8699 0.252607 8.00998 0.340778 8.06844C0.493658 8.16782 1.12364 8.17503 14.1294 8.22134L27.7592 8.26319L24.8915 11.0999C23.3102 12.6577 21.9884 14.0064 21.9587 14.0937C21.8107 14.472 21.9571 14.8277 22.3218 14.98C22.7336 15.1499 22.651 15.2196 26.4982 11.4238C28.9174 9.0406 30.0976 7.83727 30.1214 7.72663C30.1451 7.63929 30.1454 7.49947 30.1221 7.4062C30.0988 7.30129 28.9298 6.09856 26.5506 3.72217C23.531 0.715166 22.7672 -0.00312928 22.6199 0.0431444C22.6081 0.0431183 22.5256 0.0720353 22.4313 0.0952265Z" />
+                                    </svg></span></a></li>
+                                    <li><a href="blog-standard.html"><span>Network Setup</span><span><svg width="31" height="16" viewBox="0 0 31 16" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M22.4313 0.0952265C22.0661 0.205017 21.8592 0.57746 21.9525 0.950568C21.9758 1.06122 22.9569 2.0713 24.8779 3.98646L27.7623 6.865L14.1265 6.84643L0.484815 6.83367L0.319743 6.95565C0.231302 7.01953 0.113142 7.1824 0.0657449 7.31629C-0.0112326 7.53168 -0.00543762 7.5783 0.0824619 7.7591C0.135216 7.8699 0.252607 8.00998 0.340778 8.06844C0.493658 8.16782 1.12364 8.17503 14.1294 8.22134L27.7592 8.26319L24.8915 11.0999C23.3102 12.6577 21.9884 14.0064 21.9587 14.0937C21.8107 14.472 21.9571 14.8277 22.3218 14.98C22.7336 15.1499 22.651 15.2196 26.4982 11.4238C28.9174 9.0406 30.0976 7.83727 30.1214 7.72663C30.1451 7.63929 30.1454 7.49947 30.1221 7.4062C30.0988 7.30129 28.9298 6.09856 26.5506 3.72217C23.531 0.715166 22.7672 -0.00312928 22.6199 0.0431444C22.6081 0.0431183 22.5256 0.0720353 22.4313 0.0952265Z" />
+                                    </svg></span></a></li>
+                                    <li><a href="blog-standard.html"><span>Audi Car Bidding </span><span><svg width="31" height="16" viewBox="0 0 31 16" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M22.4313 0.0952265C22.0661 0.205017 21.8592 0.57746 21.9525 0.950568C21.9758 1.06122 22.9569 2.0713 24.8779 3.98646L27.7623 6.865L14.1265 6.84643L0.484815 6.83367L0.319743 6.95565C0.231302 7.01953 0.113142 7.1824 0.0657449 7.31629C-0.0112326 7.53168 -0.00543762 7.5783 0.0824619 7.7591C0.135216 7.8699 0.252607 8.00998 0.340778 8.06844C0.493658 8.16782 1.12364 8.17503 14.1294 8.22134L27.7592 8.26319L24.8915 11.0999C23.3102 12.6577 21.9884 14.0064 21.9587 14.0937C21.8107 14.472 21.9571 14.8277 22.3218 14.98C22.7336 15.1499 22.651 15.2196 26.4982 11.4238C28.9174 9.0406 30.0976 7.83727 30.1214 7.72663C30.1451 7.63929 30.1454 7.49947 30.1221 7.4062C30.0988 7.30129 28.9298 6.09856 26.5506 3.72217C23.531 0.715166 22.7672 -0.00312928 22.6199 0.0431444C22.6081 0.0431183 22.5256 0.0720353 22.4313 0.0952265Z" />
+                                    </svg></span></a></li>
+                                    <li><a href="blog-standard.html"><span>Entertainment</span><span><svg width="31" height="16" viewBox="0 0 31 16" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M22.4313 0.0952265C22.0661 0.205017 21.8592 0.57746 21.9525 0.950568C21.9758 1.06122 22.9569 2.0713 24.8779 3.98646L27.7623 6.865L14.1265 6.84643L0.484815 6.83367L0.319743 6.95565C0.231302 7.01953 0.113142 7.1824 0.0657449 7.31629C-0.0112326 7.53168 -0.00543762 7.5783 0.0824619 7.7591C0.135216 7.8699 0.252607 8.00998 0.340778 8.06844C0.493658 8.16782 1.12364 8.17503 14.1294 8.22134L27.7592 8.26319L24.8915 11.0999C23.3102 12.6577 21.9884 14.0064 21.9587 14.0937C21.8107 14.472 21.9571 14.8277 22.3218 14.98C22.7336 15.1499 22.651 15.2196 26.4982 11.4238C28.9174 9.0406 30.0976 7.83727 30.1214 7.72663C30.1451 7.63929 30.1454 7.49947 30.1221 7.4062C30.0988 7.30129 28.9298 6.09856 26.5506 3.72217C23.531 0.715166 22.7672 -0.00312928 22.6199 0.0431444C22.6081 0.0431183 22.5256 0.0720353 22.4313 0.0952265Z" />
+                                    </svg></span></a></li>
+                                    <li><a href="blog-standard.html"><span>New Technology</span><span><svg width="31" height="16" viewBox="0 0 31 16"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M22.4313 0.0952265C22.0661 0.205017 21.8592 0.57746 21.9525 0.950568C21.9758 1.06122 22.9569 2.0713 24.8779 3.98646L27.7623 6.865L14.1265 6.84643L0.484815 6.83367L0.319743 6.95565C0.231302 7.01953 0.113142 7.1824 0.0657449 7.31629C-0.0112326 7.53168 -0.00543762 7.5783 0.0824619 7.7591C0.135216 7.8699 0.252607 8.00998 0.340778 8.06844C0.493658 8.16782 1.12364 8.17503 14.1294 8.22134L27.7592 8.26319L24.8915 11.0999C23.3102 12.6577 21.9884 14.0064 21.9587 14.0937C21.8107 14.472 21.9571 14.8277 22.3218 14.98C22.7336 15.1499 22.651 15.2196 26.4982 11.4238C28.9174 9.0406 30.0976 7.83727 30.1214 7.72663C30.1451 7.63929 30.1454 7.49947 30.1221 7.4062C30.0988 7.30129 28.9298 6.09856 26.5506 3.72217C23.531 0.715166 22.7672 -0.00312928 22.6199 0.0431444C22.6081 0.0431183 22.5256 0.0720353 22.4313 0.0952265Z" />
+                                                </svg></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> {% endcomment %}
+                    <div class="blog-widget-item wow animate fadeInUp" data-wow-delay="500ms" data-wow-duration="1500ms">
+                        <div class="tag-area">
+                            <div class="sidebar-widget-title">
+                                <h4>Follow Me</h4>
+                                <span></span>
+                            </div>
+                            <div class="blog-widget-body">
+                                <ul class="sidebar-social-list gap-4">
+                                    <li><a href="https://www.facebook.com/"><i class="bx bxl-facebook"></i></a></li>
+                                    <li><a href="https://twitter.com/"><i class="bx bxl-twitter"></i></a></li>
+                                    <li><a href="https://www.pinterest.com/"><i class="bx bxl-pinterest-alt"></i></a></li>
+                                    <li><a href="https://www.instagram.com/"><i class="bx bxl-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    {% comment %} <div class="blog-widget-item wow animate fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+                        <div class="tag-area">
+                            <div class="sidebar-widget-title">
+                                <h4>Post Tag</h4>
+                                <span></span>
+                            </div>
+                            <div class="blog-widget-body">
+                                <ul class="post-tag-list gap-3 d-flex align-items-center flex-wrap">
+                                    <li><a href="blog.html">Website</a></li>
+                                    <li><a href="blog.html">Web Design</a></li>
+                                    <li><a href="blog.html">Development</a></li>
+                                    <li><a href="blog.html">Graphic Design</a></li>
+                                    <li><a href="blog.html">Graphic</a></li>
+                                    <li><a href="blog.html">UI/UX Design</a></li>
+                                    <li><a href="blog.html">Activities</a></li>
+                                    <li><a href="blog.html">Software</a></li>
+                                    <li><a href="blog.html">3d Design</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> {% endcomment %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock container%}

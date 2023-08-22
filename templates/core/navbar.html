@@ -1,0 +1,113 @@
+{% load static%}
+<header class="header-area style-2">
+    
+    <div class="header-logo">
+        <a href="#">
+            <img alt="image" 
+            src="{% static 'images/bg/header-logo-2.png'%}" > 
+        </a> 
+    </div>
+    <div class="main-menu">
+        <div class="mobile-logo-area d-lg-none d-flex justify-content-between align-items-center">
+            <div class="mobile-logo-wrap ">
+                <a href="#">
+                    <img alt="image" 
+                    src="{% static 'images/bg/header-logo-2.png'%}" > 
+                </a>
+
+            </div>
+            <div class="menu-close-btn">
+                <i class="bi bi-x-lg"></i>
+            </div>
+        </div>
+        <ul class="menu-list">
+            <li>
+                <a href="{% url 'home_page' %}">Home</a>
+                {% comment %} <ul class="submenu">
+                    <li><a href="index.html">Web Developer</a></li>
+                    <li><a href="index2.html">Dentist</a></li>
+                    <li><a href="index3.html">Lawyer</a></li>
+                </ul>  {% endcomment %}
+            </li>
+            <li>
+                <a href="{% url 'about_page' %}">About Us</a>
+            </li>
+            <li class="menu-item-has-children">
+                <a href="{% url 'services_page' %}">Services</a><i class='bx bx-plus dropdown-icon'></i>
+                <ul class="submenu">
+                    <li><a href="#">All On Four Implant</a></li>
+                    <li><a href="#">All On Six Implants</a></li>
+                    <li><a href="#">Dental Implant</a></li>
+                    <li><a href="#">Digital Dentistry</a></li>
+                    <li><a href="#">Gummy Aesthetic</a></li>
+                    <li><a href="#">Inlay / Onlay Restorations</a></li>
+                    <li><a href="#">Laminate Veneers</a></li>
+                    <li><a href="#">Maxillofacial Surgery</a></li>
+                    <li><a href="#">Orthodontics</a></li>
+                    <li><a href="#">Peridontology</a></li>
+                    <li><a href="#">Porcelain Crowns</a></li>
+                    <li><a href="#">Smile Design And <br>Aesthetic Dentistry</a></li>
+                    <li><a href="#">Teeth Whitening</a></li>
+                </ul>
+            </li>
+            <li >
+                <a href="{% url 'doctors_page' %}">Our Doctors</a>
+                {% comment %} <ul class="submenu">
+                    <li><a href="project1.html">Project 01</a></li>
+                    <li><a href="project2.html">Project 02</a></li>
+                    <li><a href="project-details.html">Project Details</a></li>
+                </ul>  {% endcomment %}
+            </li>
+            <li >
+                <a href="{% url 'blog_page' %}">Blog</a>
+                {% comment %} <ul class="submenu">
+                    <li><a href="blog.html">Blog Grid</a></li>
+                    <li><a href="blog-standard.html">Blog Standard</a></li>
+                    <li><a href="blog-details.html">Blog Details</a></li>
+                </ul> {% endcomment %}
+            </li>
+            {% comment %} <li class="menu-item-has-children">
+                <a href="#" class="drop-down">Pages</a><i class='bx bx-plus dropdown-icon'></i>
+                <ul class="submenu">
+                    <li><a href="pricing-plan.html">Pricing Plan</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="404.html">Error</a></li>
+                </ul>
+            </li> {% endcomment %}
+            <li><a href="{% url 'contact_page' %}">Contact</a></li>
+        </ul>
+        <!-- mobile-search-area -->
+        <div class="d-lg-none d-block">
+            <form class="mobile-menu-form">
+                <div class="hotline">
+                    <div class="hotline-icon">
+                        <img 
+                        src="{% static 'images/icons/header-phone2.svg' %}" alt=""> 
+                    </div>
+                    <div class="hotline-info">          
+                        <span>Click To Call</span>
+                        <h6><a href="#" id="whatsapp-link">+90 546 432 29 01 </a></h6>
+                        
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <div class="nav-right d-flex align-items-center">
+        <div class="hotline d-xl-flex d-none">
+            <div class="hotline-icon">
+                <img alt="image" 
+                src="{% static 'images/icons/header-phone2.svg' %}" >
+            </div>
+            <div class="hotline-info contact-info">
+                <span>Click to Contact</span>
+                <h6><a href="https://wa.me/901111111111" >+90 111 111 11 11 </a></h6>
+                
+            </div>
+        </div>
+        <div class="mobile-menu-btn d-lg-none d-block">
+            <i class='bx bx-menu'></i>
+        </div>
+    </div>
+</header>

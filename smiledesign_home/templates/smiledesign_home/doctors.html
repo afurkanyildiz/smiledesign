@@ -1,0 +1,293 @@
+{% extends 'core/base.html'%}
+{% load static %}
+
+{% block container %}
+
+<div class="inner-page-banner">
+    <div class="inner-banner-top">
+        <img class="inner-banner-vec-2 img-fluid " src="{% static 'images/bg/inner-banner-vec-1.png' %}" alt="">
+        <img class="inner-banner-vec-1 img-fluid" src="{% static 'images/bg/inner-banner-vec-2.png' %}" alt="">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8">
+                    <div class="inner-banner-title">
+                        <h2>I Provided Alawyes <br>
+                        <span>Creative Work.</span></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="breadcrumb-area">
+           <div class="container">
+               <div class="row">
+                   <div class="col-12 d-flex justify-content-sm-end justify-content-center">
+                        <div class="inner-breadcrumb">
+                            <h2>Project 01</h2>
+                            <nav>
+                                <ol class="breadcrumb">
+                                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                  <li class="breadcrumb-item active" aria-current="page">Project 01</li>
+                                </ol>
+                              </nav>
+                        </div>
+                   </div>
+               </div>
+           </div>
+        </div>
+    </div>
+</div>
+<!-- ========== breadcump end============= -->
+
+<!-- ==========project Start============= -->
+<div class="project-1 pt-120 mb-120">
+    <div class="work-area mb-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 wow animate fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                    <div class="works-top d-flex justify-content-between align-items-center flex-wrap">
+                        <div class="section-title1">
+                            {% comment %} <span>Doctors</span> {% endcomment %}
+                            <h2>Doctors</h2>
+                        </div>
+                        <div class="works-tab-btn-area d-flex align-items-center">
+                            <ul class="d-flex flex-wrap">
+                                <li data-filter=".all">All</li>
+                                <li data-filter=".web">Website</li>
+                                <li data-filter=".app">App</li>
+                                <li data-filter=".landp">landing page</li>
+                                <li data-filter=".branding">branding</li>
+                            </ul>
+                            <div class="menu-icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="20" cy="20" r="19.5" fill="white" />
+                                    <path
+                                        d="M10.3259 12.0423C10.1071 12.1516 10 12.3611 10 12.6799C10 13.0078 10.1027 13.2264 10.317 13.3448C10.4598 13.4222 10.7634 13.4268 17.1429 13.4268C23.5223 13.4268 23.8259 13.4222 23.9688 13.3448C24.1786 13.2309 24.2857 13.0078 24.2857 12.6981C24.2857 12.3884 24.1786 12.1653 23.9688 12.0514C23.8259 11.974 23.5223 11.9694 17.1429 11.9694C11.1161 11.9694 10.4554 11.9785 10.3259 12.0423Z" />
+                                    <path
+                                        d="M10.3259 19.3289C10.1071 19.4382 10 19.6477 10 19.9665C10 20.2944 10.1027 20.513 10.317 20.6314C10.4598 20.7088 10.8527 20.7134 20 20.7134C29.1473 20.7134 29.5402 20.7088 29.683 20.6314C29.8929 20.5175 30 20.2944 30 19.9847C30 19.675 29.8929 19.4519 29.683 19.338C29.5402 19.2606 29.1473 19.256 20 19.256C11.3571 19.256 10.4554 19.2652 10.3259 19.3289Z" />
+                                    <path
+                                        d="M10.3259 26.6155C10.1071 26.7248 10 26.9343 10 27.2531C10 27.581 10.1027 27.7996 10.317 27.918C10.4598 27.9954 10.7634 28 17.1429 28C23.5223 28 23.8259 27.9954 23.9688 27.918C24.1786 27.8042 24.2857 27.581 24.2857 27.2713C24.2857 26.9616 24.1786 26.7385 23.9688 26.6246C23.8259 26.5472 23.5223 26.5427 17.1429 26.5427C11.1161 26.5427 10.4554 26.5518 10.3259 26.6155Z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 work-item align-items-center">
+                {% for doctor in doctors %}
+                <div class="col-md-6 gallery-item all web wow animate fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
+                    <div class="single-gallery">
+                        <a data-lightbox="image1" href="{{ doctor.doctor_image.url }}">
+                            <img class="img-fluid" src="{{ doctor.doctor_image.url }}"  alt="">
+                        </a>
+                        <div class="overlay">
+                            {% comment %} <div class="sl-number">
+                                <h2>01</h2>
+                            </div> {% endcomment %}
+                            <div class="content">
+                                <span>{{ doctor.doctor_name }}</span>
+                                <h3>{{ doctor.field_of_expertise }}</h3>
+                            </div>
+                            <div class="case-button">
+                                <a href="project-details.html">Examine</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                {% comment %} <div class="col-md-6 gallery-item all web wow animate fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
+                    <div class="single-gallery">
+                        <a data-lightbox="image1" href="{% static 'images/bg/project--1.png' %}">
+                            <img class="img-fluid" src="{% static 'images/bg/project--1.png' %}"  alt="">
+                        </a>
+                        <div class="overlay">
+                            <div class="sl-number">
+                                <h2>01</h2>
+                            </div>
+                            <div class="content">
+                                <span>Software</span>
+                                <h3>Laravel Development</h3>
+                            </div>
+                            <div class="case-button">
+                                <a href="project-details.html">Case Study</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 gallery-item all app wow animate fadeInRight" data-wow-delay="500ms" data-wow-duration="1500ms">
+                    <div class="single-gallery">
+                        <a data-lightbox="image1" href="{% static 'images/bg/project--2.png' %}">
+                            <img class="img-fluid" src="{% static 'assets/images/bg/project--2.png' %}"  alt="">
+                        </a>
+                        <div class="overlay">
+                            <div class="sl-number">
+                                <h2>02</h2>
+                            </div>
+                            <div class="content">
+                                <span>Software</span>
+                                <h3>Frondend Development</h3>
+                            </div>
+                            <div class="case-button">
+                                <a href="project-details.html">Case Study</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 gallery-item all landp wow animate fadeInLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
+                    <div class="single-gallery">
+                        <a data-lightbox="image1" href="{% static 'images/bg/project--4.png' %}">
+                            <img class="img-fluid" src="{% static 'images/bg/project--4.png' %}"  alt="">
+                        </a>
+                        <div class="overlay">
+                            <div class="sl-number">
+                                <h2>03</h2>
+                            </div>
+                            <div class="content">
+                                <span>Software</span>
+                                <h3>UI/UX Design</h3>
+                            </div>
+                            <div class="case-button">
+                                <a href="project-details.html">Case Study</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 gallery-item all branding wow animate fadRfadeInRightnUp" data-wow-delay="800ms" data-wow-duration="1500ms">
+                    <div class="single-gallery">
+                        <a data-lightbox="image1" href="{% static 'images/bg/project--3.png' %}">
+                            <img class="img-fluid" src="{% static 'images/bg/project--3.png' %}"  alt="">
+                        </a>
+                        <div class="overlay">
+                            <div class="sl-number">
+                                <h2>04</h2>
+                            </div>
+                            <div class="content">
+                                <span>Software</span>
+                                <h3>Thems Development</h3>
+                            </div>
+                            <div class="case-button">
+                                <a href="project-details.html">Case Study</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 gallery-item all web wow animate fadeInLeft" data-wow-delay="400ms" data-wow-duration="1500ms">
+                    <div class="single-gallery">
+                        <a data-lightbox="image1" href="{% static 'images/bg/project--5.png' %}">
+                            <img class="img-fluid" src="{% static 'images/bg/project--5.png' %}"  alt="">
+                        </a>
+                        <div class="overlay">
+                            <div class="sl-number">
+                                <h2>05</h2>
+                            </div>
+                            <div class="content">
+                                <span>Software</span>
+                                <h3>React Development</h3>
+                            </div>
+                            <div class="case-button">
+                                <a href="project-details.html">Case Study</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 gallery-item all app wow animate fadeInRight" data-wow-delay="600ms" data-wow-duration="1500ms">
+                    <div class="single-gallery">
+                        <a data-lightbox="image1" href="{% static 'images/bg/project--6.png' %}">
+                            <img class="img-fluid" src="{% static 'images/bg/project--6.png' %}"  alt="">
+                        </a>
+                        <div class="overlay">
+                            <div class="sl-number">
+                                <h2>06</h2>
+                            </div>
+                            <div class="content">
+                                <span>Software</span>
+                                <h3>SaaS Aplications</h3>
+                            </div>
+                            <div class="case-button">
+                                <a href="project-details.html">Case Study</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 gallery-item all landp wow animate fadeInLeft" data-wow-delay="400ms" data-wow-duration="1500ms">
+                    <div class="single-gallery">
+                        <a data-lightbox="image1" href="{% static 'images/bg/project--7.png' %}">
+                            <img class="img-fluid" src="{% static 'images/bg/project--7.png' %}"  alt="">
+                        </a>
+                        <div class="overlay">
+                            <div class="sl-number">
+                                <h2>07</h2>
+                            </div>
+                            <div class="content">
+                                <span>Software</span>
+                                <h3>Plugins Development</h3>
+                            </div>
+                            <div class="case-button">
+                                <a href="project-details.html">Case Study</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 gallery-item all branding wow animate fadRfadeInRightnUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+                    <div class="single-gallery">
+                        <a data-lightbox="image1" href="{% static 'images/bg/project--8.png' %}">
+                            <img class="img-fluid" src="{% static 'images/bg/project--8.png' %}"  alt="">
+                        </a>
+                        <div class="overlay">
+                            <div class="sl-number">
+                                <h2>08</h2>
+                            </div>
+                            <div class="content">
+                                <span>Software</span>
+                                <h3>Apps Development</h3>
+                            </div>
+                            <div class="case-button">
+                                <a href="project-details.html">Case Study</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 gallery-item all app wow animate fadeInLeft" data-wow-delay="400ms" data-wow-duration="1500ms">
+                    <div class="single-gallery">
+                        <a data-lightbox="image1" href="{% static 'images/bg/project--10.png' %}">
+                            <img class="img-fluid" src="{% static 'images/bg/project--10.png' %}"  alt="">
+                        </a>
+                        <div class="overlay">
+                            <div class="sl-number">
+                                <h2>09</h2>
+                            </div>
+                            <div class="content">
+                                <span>Software</span>
+                                <h3>Clients Support</h3>
+                            </div>
+                            <div class="case-button">
+                                <a href="project-details.html">Case Study</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 gallery-item all web wow animate fadeInRight" data-wow-delay="600ms" data-wow-duration="1500ms">
+                    <div class="single-gallery">
+                        <a data-lightbox="image1" href="{% static 'images/bg/project--9.png' %}">
+                            <img class="img-fluid" src="{% static 'images/bg/project--9.png' %}"  alt="">
+                        </a>
+                        <div class="overlay">
+                            <div class="sl-number">
+                                <h2>10</h2>
+                            </div>
+                            <div class="content">
+                                <span>Software</span>
+                                <h3>PHP Development</h3>
+                            </div>
+                            <div class="case-button">
+                                <a href="project-details.html">Case Study</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> {% endcomment %}
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ==========Project End============= -->
+
+{% endblock container%}
