@@ -41,108 +41,24 @@
         <div class="home-one-services pt-120 mb-100">
             <div class="container">
                 <div class="row g-4">
+                    {% for service in services %}
                     <div class="col-md-6 col-lg-4 wow animate fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
                         <div class="services-wrrap">
                             <div class="services-top d-flex justify-content-between align-items-center">
                                 <div class="icon">
                                     <img src="{% static 'images/icons/web-design.svg' %}" alt="web-design">
-                                </div>
-                                <h2>01</h2>
+                                </div>                        
+                                <h2>{{ forloop.counter|stringformat:"02d" }}</h2>
                             </div>
                             <div class="content">
-                                <h3>Web <br>
-                                    Devlopment.</h3>
+                                <h3>{{ service.services_name }}</h3>
                             </div>
                             <div class="read-more-btn d-flex justify-content-end">
                                 <a href="services-details.html">Read More <span><img src="{% static 'images/icons/arrow-right.svg' %}" alt=""></span></a>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow animate fadeInLeft" data-wow-delay="400ms" data-wow-duration="1500ms">
-                        <div class="services-wrrap">
-                            <div class="services-top d-flex justify-content-between align-items-center">
-                                <div class="icon">
-                                    <img src="{% static 'images/icons/graphic-design.svg' %}" alt="web-design">
-                                </div>
-                                <h2>02</h2>
-                            </div>
-                            <div class="content">
-                                <h3>Graphic<br>
-                                    Design.</h3>
-                            </div>
-                            <div class="read-more-btn d-flex justify-content-end">
-                                <a href="services-details.html">Read More <span><img src="{% static 'images/icons/arrow-right.svg' %}" alt=""></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow animate fadeInLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
-                        <div class="services-wrrap">
-                            <div class="services-top d-flex justify-content-between align-items-center">
-                                <div class="icon">
-                                    <img src="{% static 'images/icons/coding.svg' %}" alt="web-design">
-                                </div>
-                                <h2>03</h2>
-                            </div>
-                            <div class="content">
-                                <h3>Software <br>
-                                    Devlopment.</h3>
-                            </div>
-                            <div class="read-more-btn d-flex justify-content-end">
-                                <a href="services-details.html">Read More <span><img src="{% static 'images/icons/arrow-right.svg' %}" alt=""></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow animate fadeInRight" data-wow-delay="200ms" data-wow-duration="1500ms">
-                        <div class="services-wrrap">
-                            <div class="services-top d-flex justify-content-between align-items-center">
-                                <div class="icon">
-                                    <img src="{% static 'images/icons/video.svg' %}" alt="web-design">
-                                </div>
-                                <h2>04</h2>
-                            </div>
-                            <div class="content">
-                                <h3>Video Motion <br>
-                                    Graphic.</h3>
-                            </div>
-                            <div class="read-more-btn d-flex justify-content-end">
-                                <a href="services-details.html">Read More <span><img src="{% static 'images/icons/arrow-right.svg' %}" alt=""></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow animate fadeInRight" data-wow-delay="400ms" data-wow-duration="1500ms">
-                        <div class="services-wrrap">
-                            <div class="services-top d-flex justify-content-between align-items-center">
-                                <div class="icon">
-                                    <img src="{% static 'images/icons/idea.svg' %}" alt="web-design">
-                                </div>
-                                <h2>05</h2>
-                            </div>
-                            <div class="content">
-                                <h3>Product Design &<br>
-                                    Develop.</h3>
-                            </div>
-                            <div class="read-more-btn d-flex justify-content-end">
-                                <a href="services-details.html">Read More <span><img src="{% static 'images/icons/arrow-right.svg' %}" alt=""></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow animate fadeInRight" data-wow-delay="600ms" data-wow-duration="1500ms">
-                        <div class="services-wrrap">
-                            <div class="services-top d-flex justify-content-between align-items-center">
-                                <div class="icon">
-                                    <img src="{% static 'images/icons/branding.svg' %}" alt="web-design">
-                                </div>
-                                <h2>06</h2>
-                            </div>
-                            <div class="content">
-                                <h3>Branding & Soft <br>
-                                    Indentity.</h3>
-                            </div>
-                            <div class="read-more-btn d-flex justify-content-end">
-                                <a href="services-details.html">Read More <span><img src="{% static 'images/icons/arrow-right.svg' %}" alt=""></span></a>
-                            </div>
-                        </div>
-                    </div>
+                    </div>  
+                    {% endfor %}                
                 </div>
             </div>
         </div>
@@ -183,7 +99,7 @@
         </div>
         <!-- ==========  Services process End============= -->
         <!-- ==========  Services features Start============= -->
-        <div class="service-feature mb-120">
+        <!-- <div class="service-feature mb-120">
             <div class="container-fluid">
                 <div class="row align-items-start">
                     <div class="col-xxl-4 col-xl-6 p-0 d-flex justify-content-center wow animate fadeInLeft" data-wow-delay="400ms" data-wow-duration="1500ms">
@@ -414,7 +330,7 @@
                     </div>
                 </div>
             </div> 
-        </div>
+        </div> -->
         <!-- ==========  Services features End============= -->
         <!-- ========== About Testimonial Start============= -->
         <div class="testimonial-area mb-120">
@@ -505,7 +421,7 @@
         </div>
         <!-- ========== About Testimonial End============= -->
         <!-- ==========Pricing Plan Start============= -->
-        <div class="pricing-plan-area mb-120">
+        <!-- <div class="pricing-plan-area mb-120">
             <div class="container">
                 <div class="row wow animate fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
                     <div class="col-lg-12">
@@ -581,5 +497,5 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 {% endblock container%}

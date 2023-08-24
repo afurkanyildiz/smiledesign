@@ -25,3 +25,14 @@ class Doctors(models.Model):
     
     def __str__(self):
         return self.doctor_name
+
+
+class Services(models.Model):
+    services_name = models.CharField(max_length=400)
+    services_description = models.TextField()
+    services_image = models.ImageField(upload_to='services_images', null=True,blank=True)
+    is_active = models.BooleanField(default=True)
+    
+    
+    def __str__(self):
+        return self.services_name

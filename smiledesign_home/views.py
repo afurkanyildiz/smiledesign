@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Blog,Doctors
+from .models import Blog,Doctors,Services
 from django.http import Http404
 from django.shortcuts import get_object_or_404
 
@@ -12,7 +12,11 @@ def about_page(request):
     return render(request,'smiledesign_home/about.html',{})
 
 def services_page(request):
-    return render(request,'smiledesign_home/services.html',{})
+    services = Services.objects.filter(is_active=True)
+    numbers = list(range(1, services.count()))
+
+    context = dict(services=services,numbers=numbers)
+    return render(request,'smiledesign_home/services.html',context)
 
 def doctors_page(request):
     doctors = Doctors.objects.filter(is_active=True)
@@ -31,6 +35,12 @@ def blog_detail_page(request, id ):
     blog = get_object_or_404(Blog, pk=id)
     print(id)
     context = dict(blog=blog)
-    return render(request,'smiledesign_home/blog_details.html',context)
+    return render(request,'smiledesign_home/details/blog_details.html',context)
+
+def services_detail_page(request, id ): 
+    services = get_object_or_404(Services, pk=id)
+    print(id)
+    context = dict(services=services)
+    return render(request,'smiledesign_home/details/services_details.html',context)
 
 # Create your views here.

@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Blog,Doctors
+from .models import Blog,Doctors,Services
 
 
 class BlogAdmin(admin.ModelAdmin):
@@ -19,6 +19,13 @@ class DoctorsAdmin(admin.ModelAdmin):
         'is_active', 
     ]
 admin.site.register(Doctors,DoctorsAdmin)
+
+class ServicesAdmin(admin.ModelAdmin):
+    list_display=[
+        'services_name',
+        'is_active', 
+    ]
+admin.site.register(Services,ServicesAdmin)
 
 
 # Register your models here.
