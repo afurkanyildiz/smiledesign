@@ -23,31 +23,22 @@
         <ul class="menu-list">
             <li>
                 <a href="{% url 'home_page' %}">Home</a>
-                {% comment %} <ul class="submenu">
-                    <li><a href="index.html">Web Developer</a></li>
-                    <li><a href="index2.html">Dentist</a></li>
-                    <li><a href="index3.html">Lawyer</a></li>
-                </ul>  {% endcomment %}
             </li>
             <li>
                 <a href="{% url 'about_page' %}">About Us</a>
             </li>
             <li class="menu-item-has-children">
-                <a href="{% url 'services_page' %}">Services</a><i class='bx bx-plus dropdown-icon'></i>
+                <a href="{% url 'services_page' %}">Services</a><i class='bx bx-plus dropdown-icon'></i>  
+                
                 <ul class="submenu">
-                    <li><a href="#">All On Four Implant</a></li>
-                    <li><a href="#">All On Six Implants</a></li>
-                    <li><a href="#">Dental Implant</a></li>
-                    <li><a href="#">Digital Dentistry</a></li>
-                    <li><a href="#">Gummy Aesthetic</a></li>
-                    <li><a href="#">Inlay / Onlay Restorations</a></li>
-                    <li><a href="#">Laminate Veneers</a></li>
-                    <li><a href="#">Maxillofacial Surgery</a></li>
-                    <li><a href="#">Orthodontics</a></li>
-                    <li><a href="#">Peridontology</a></li>
-                    <li><a href="#">Porcelain Crowns</a></li>
-                    <li><a href="#">Smile Design And <br>Aesthetic Dentistry</a></li>
-                    <li><a href="#">Teeth Whitening</a></li>
+                    {% for service in services.all %}
+                        <li><a href="{% url 'services_detail_page' id=service.pk %}" title="{{ service.services_name }}">{{ service.services_name }}</a></li>
+                    {% endfor %}
+                </ul>           
+                <ul class="submenu">                    
+                {% for service in services.all %}
+                    <li><a  href="{% url 'services_detail_page' id=service.pk %}">{{ service.services_name }}</a></li>
+                {% endfor %}
                 </ul>
             </li>
             <li >
@@ -60,11 +51,6 @@
             </li>
             <li >
                 <a href="{% url 'blog_page' %}">Blog</a>
-                {% comment %} <ul class="submenu">
-                    <li><a href="blog.html">Blog Grid</a></li>
-                    <li><a href="blog-standard.html">Blog Standard</a></li>
-                    <li><a href="blog-details.html">Blog Details</a></li>
-                </ul> {% endcomment %}
             </li>
             {% comment %} <li class="menu-item-has-children">
                 <a href="#" class="drop-down">Pages</a><i class='bx bx-plus dropdown-icon'></i>

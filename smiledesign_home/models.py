@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+# from django_autoslug import AutoSlugField
 
 class Blog(models.Model):
     title = models.CharField(max_length=200)
@@ -9,6 +10,7 @@ class Blog(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     created_by = models.ForeignKey(User,on_delete=models.CASCADE,default=1)
+    # slug = AutoSlugField(populate_from='title', unique=True,default='',editable=True)
     
     def __str__(self):
         return self.title
@@ -22,6 +24,7 @@ class Doctors(models.Model):
     doctor_image=models.ImageField(upload_to='doctors_images',null=True,blank=True)
     is_active = models.BooleanField(default=True)
     created_at = models.DateTimeField(auto_now_add=True)
+    # slug = AutoSlugField(populate_from='doctor_name', unique=True,default='',editable=True)
     
     def __str__(self):
         return self.doctor_name
@@ -32,7 +35,9 @@ class Services(models.Model):
     services_description = models.TextField()
     services_image = models.ImageField(upload_to='services_images', null=True,blank=True)
     is_active = models.BooleanField(default=True)
+    # slug = AutoSlugField(populate_from='services_name', unique=True,default='',editable=True)
     
     
     def __str__(self):
         return self.services_name
+    
