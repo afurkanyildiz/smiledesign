@@ -4,34 +4,25 @@
 {% block container %}
 
 <!-- ========== breadcump Start============= -->
-<div class="inner-page-banner">
-    <div class="inner-banner-top">
-        <img class="inner-banner-vec-2 img-fluid " src="assets/images/bg/inner-banner-vec-1.png" alt="">
-        <img class="inner-banner-vec-1 img-fluid" src="assets/images/bg/inner-banner-vec-2.png" alt="">
+<div class="inner-page-banner-services">
+    <div class="inner-banner-top-services">
+        <img class="inner-banner-vec-2-services img-fluid " src="assets/images/bg/inner-banner-vec-1.png" alt="">
+        <img class="inner-banner-vec-1-services img-fluid" src="assets/images/bg/inner-banner-vec-2.png" alt="">
         <div class="container">
             <div class="row">
                 <div class="col-xl-8">
-                    <div class="inner-banner-title">
-                        <h2>I Provided Alawyes <br>
-                            <span>Creative Work.</span>
+                    <div class="inner-banner-title-services">
+                        <h2>Yeni Gülüş <br>
+                            <span>Yeni Hayat.</span></h2>
                         </h2>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="breadcrumb-area">
+        <div class="breadcrumb-area-services">
             <div class="container">
                 <div class="row">
                     <div class="col-12 d-flex justify-content-sm-end justify-content-center">
-                        <div class="inner-breadcrumb">
-                            <h2>Services Details</h2>
-                            <nav>
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Services Details</li>
-                                </ol>
-                            </nav>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -48,7 +39,7 @@
                 data-wow-duration="1500ms">
                 <div class="service-details-wrrap">
                     <div class="service-img-1">
-                        <img class="img-fluid" src="assets/images/bg/swrvice-dt-1.png" alt="">
+                        <img class="img-fluid" src="{{ services_object.services_image.url }}" alt="">
                     </div>
                     <h3>
                         <svg width="45" height="45" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg">
@@ -91,73 +82,7 @@
                         </svg>
                         {{ services_object.services_name }}
                     </h3>
-                    <p class="para">Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam eu nibh
-                        elementum, accumsan ona
-                        neque ac, aliquet nunc. In eu ipsum fringilla, accumsan purus vel, pellentesque risus. Vivamus
-                        vehicula nl
-                        purus at eros interdum, in dignissim nulla vestibulum. Nunc sit amet finibus felis, ut egestas
-                        lacus. Sedan
-                        pellentesque quis magna eu vestibulum. Ut sed commodo neque. Morbi erat nisi, vehicula quis
-                        faucibus il</p>
-
-                    <p class="para">ut, hendrerit vel tortor. In pharetra lectus luctus ornare sollicitudin.
-                        Pellentesque at neque nec justo sokal
-                        porttitor egestas nec eget ex.Etiam suscipit neque elit, hendrerit laoreet quam ultrices id.
-                        Proin nec tolde
-                        lacinia ligula, sed laoreet ex. Sed nisl ligula, euismod vel justo scelerisque,</p>
-
-                    <p class="para">vestibulum ultricies tellus. volv Pellentesque vel turpis vitae urna tincidunt
-                        hendrerit at ut est. Sed eget feugiat felis. Integer sed ornare sem, eget porttitor nisi. Nunc
-                        erat sapien, porta laoreet gravida ac, </p>
-                    <div class="service-img-2">
-                        <img class="img-fluid" src="assets/images/bg/service-dt-2.png" alt="">
-                    </div>
-                    <h3>Work Direction</h3>
-                    <p class="para">Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam eu nibh
-                        elementum, accumsan ona
-                        neque ac, aliquet nunc. In eu ipsum fringilla, accumsan purus vel, pellentesque risus. Vivamus
-                        vehicula nl
-                        purus at eros interdum, in dignissim nulla vestibulum. Nunc sit amet finibus felis, ut egestas
-                        lacus. Sedan
-                        pellentesque quis magna eu vestibulum. Ut sed commodo neque. Morbi erat nisi, vehicula quis
-                        faucibus il</p>
-
-                    <p class="para">ut, hendrerit vel tortor. In pharetra lectus luctus ornare sollicitudin.
-                        Pellentesque at neque nec justo sokal
-                        porttitor egestas nec eget ex.Etiam suscipit neque elit, hendrerit laoreet quam ultrices id.
-                        Proin nec tolde
-                        lacinia ligula, sed laoreet ex. Sed nisl ligula, euismo
-                        d vel justo scelerisque,</p>
-                    <h3 class="pt-25">Unlimited skills for super projects.</h3>
-                    <ul>
-                        <li>
-                            <svg width="14" height="12" viewBox="0 0 14 12" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M11.6414 0.251324C9.56957 1.55093 7.05864 3.81284 4.89123 6.31946L4.50166 6.7692L2.96465 5.76721C2.12177 5.21827 1.38868 4.75861 1.33909 4.752C1.17973 4.72223 1.04515 4.81483 0.531629 5.29763C-0.0739693 5.86972 -0.0881353 5.89949 0.124355 6.18719C0.198727 6.2897 0.67329 6.9147 1.18327 7.57608C2.24572 8.95836 3.30463 10.3935 3.76503 11.0748C4.36709 11.9643 4.35646 11.9511 4.48396 11.9842C4.70353 12.0404 4.79915 11.9643 5.1108 11.4716C5.85452 10.2877 7.08343 8.48547 8.00776 7.22555C10.0193 4.48414 11.783 2.4504 13.4157 0.988759C13.9858 0.476192 14 0.462964 14 0.330688C14 0.214948 13.9788 0.175265 13.8831 0.0958996L13.7698 0H12.9057H12.0415L11.6414 0.251324Z" />
-                            </svg>
-                            We provide free initial consultation and support of all time 24 hour.
-                        </li>
-                        <li>
-                            <svg width="14" height="12" viewBox="0 0 14 12" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M11.6414 0.251324C9.56957 1.55093 7.05864 3.81284 4.89123 6.31946L4.50166 6.7692L2.96465 5.76721C2.12177 5.21827 1.38868 4.75861 1.33909 4.752C1.17973 4.72223 1.04515 4.81483 0.531629 5.29763C-0.0739693 5.86972 -0.0881353 5.89949 0.124355 6.18719C0.198727 6.2897 0.67329 6.9147 1.18327 7.57608C2.24572 8.95836 3.30463 10.3935 3.76503 11.0748C4.36709 11.9643 4.35646 11.9511 4.48396 11.9842C4.70353 12.0404 4.79915 11.9643 5.1108 11.4716C5.85452 10.2877 7.08343 8.48547 8.00776 7.22555C10.0193 4.48414 11.783 2.4504 13.4157 0.988759C13.9858 0.476192 14 0.462964 14 0.330688C14 0.214948 13.9788 0.175265 13.8831 0.0958996L13.7698 0H12.9057H12.0415L11.6414 0.251324Z" />
-                            </svg>
-                            We work with some of the most successful businesses work many creative work.
-                        </li>
-                        <li>
-                            <svg width="14" height="12" viewBox="0 0 14 12" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M11.6414 0.251324C9.56957 1.55093 7.05864 3.81284 4.89123 6.31946L4.50166 6.7692L2.96465 5.76721C2.12177 5.21827 1.38868 4.75861 1.33909 4.752C1.17973 4.72223 1.04515 4.81483 0.531629 5.29763C-0.0739693 5.86972 -0.0881353 5.89949 0.124355 6.18719C0.198727 6.2897 0.67329 6.9147 1.18327 7.57608C2.24572 8.95836 3.30463 10.3935 3.76503 11.0748C4.36709 11.9643 4.35646 11.9511 4.48396 11.9842C4.70353 12.0404 4.79915 11.9643 5.1108 11.4716C5.85452 10.2877 7.08343 8.48547 8.00776 7.22555C10.0193 4.48414 11.783 2.4504 13.4157 0.988759C13.9858 0.476192 14 0.462964 14 0.330688C14 0.214948 13.9788 0.175265 13.8831 0.0958996L13.7698 0H12.9057H12.0415L11.6414 0.251324Z" />
-                            </svg>
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.
-                        </li>
-                        <li>
-                            <svg width="14" height="12" viewBox="0 0 14 12" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M11.6414 0.251324C9.56957 1.55093 7.05864 3.81284 4.89123 6.31946L4.50166 6.7692L2.96465 5.76721C2.12177 5.21827 1.38868 4.75861 1.33909 4.752C1.17973 4.72223 1.04515 4.81483 0.531629 5.29763C-0.0739693 5.86972 -0.0881353 5.89949 0.124355 6.18719C0.198727 6.2897 0.67329 6.9147 1.18327 7.57608C2.24572 8.95836 3.30463 10.3935 3.76503 11.0748C4.36709 11.9643 4.35646 11.9511 4.48396 11.9842C4.70353 12.0404 4.79915 11.9643 5.1108 11.4716C5.85452 10.2877 7.08343 8.48547 8.00776 7.22555C10.0193 4.48414 11.783 2.4504 13.4157 0.988759C13.9858 0.476192 14 0.462964 14 0.330688C14 0.214948 13.9788 0.175265 13.8831 0.0958996L13.7698 0H12.9057H12.0415L11.6414 0.251324Z" />
-                            </svg>
-                            Omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem.
-                        </li>
+                    <p class="para">{{ services_object.services_description|safe }}</p>
                     </ul>
                 </div>
             </div>
@@ -176,49 +101,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="blog-widget-item wow animate fadeInUp" data-wow-delay="600ms"
-                        data-wow-duration="1500ms">
-                        <div class="top-blog">
-                            <div class="sidebar-widget-title">
-                                <h4>Categories</h4>
-                                <span></span>
-                            </div>
-                            <div class="blog-widget-body">
-                                <ul class="category-list">
-                                    <li><a href="#"><span>New Technology</span><span><svg width="31" height="16"
-                                                    viewBox="0 0 31 16" xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M22.4313 0.0952265C22.0661 0.205017 21.8592 0.57746 21.9525 0.950568C21.9758 1.06122 22.9569 2.0713 24.8779 3.98646L27.7623 6.865L14.1265 6.84643L0.484815 6.83367L0.319743 6.95565C0.231302 7.01953 0.113142 7.1824 0.0657449 7.31629C-0.0112326 7.53168 -0.00543762 7.5783 0.0824619 7.7591C0.135216 7.8699 0.252607 8.00998 0.340778 8.06844C0.493658 8.16782 1.12364 8.17503 14.1294 8.22134L27.7592 8.26319L24.8915 11.0999C23.3102 12.6577 21.9884 14.0064 21.9587 14.0937C21.8107 14.472 21.9571 14.8277 22.3218 14.98C22.7336 15.1499 22.651 15.2196 26.4982 11.4238C28.9174 9.0406 30.0976 7.83727 30.1214 7.72663C30.1451 7.63929 30.1454 7.49947 30.1221 7.4062C30.0988 7.30129 28.9298 6.09856 26.5506 3.72217C23.531 0.715166 22.7672 -0.00312928 22.6199 0.0431444C22.6081 0.0431183 22.5256 0.0720353 22.4313 0.0952265Z" />
-                                                </svg></span></a></li>
-                                    <li><a href="#"><span>Network Setup</span><span><svg width="31" height="16"
-                                                    viewBox="0 0 31 16" xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M22.4313 0.0952265C22.0661 0.205017 21.8592 0.57746 21.9525 0.950568C21.9758 1.06122 22.9569 2.0713 24.8779 3.98646L27.7623 6.865L14.1265 6.84643L0.484815 6.83367L0.319743 6.95565C0.231302 7.01953 0.113142 7.1824 0.0657449 7.31629C-0.0112326 7.53168 -0.00543762 7.5783 0.0824619 7.7591C0.135216 7.8699 0.252607 8.00998 0.340778 8.06844C0.493658 8.16782 1.12364 8.17503 14.1294 8.22134L27.7592 8.26319L24.8915 11.0999C23.3102 12.6577 21.9884 14.0064 21.9587 14.0937C21.8107 14.472 21.9571 14.8277 22.3218 14.98C22.7336 15.1499 22.651 15.2196 26.4982 11.4238C28.9174 9.0406 30.0976 7.83727 30.1214 7.72663C30.1451 7.63929 30.1454 7.49947 30.1221 7.4062C30.0988 7.30129 28.9298 6.09856 26.5506 3.72217C23.531 0.715166 22.7672 -0.00312928 22.6199 0.0431444C22.6081 0.0431183 22.5256 0.0720353 22.4313 0.0952265Z" />
-                                                </svg></span></a></li>
-                                    <li><a href="#"><span>Audi Car Bidding </span><span><svg width="31" height="16"
-                                                    viewBox="0 0 31 16" xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M22.4313 0.0952265C22.0661 0.205017 21.8592 0.57746 21.9525 0.950568C21.9758 1.06122 22.9569 2.0713 24.8779 3.98646L27.7623 6.865L14.1265 6.84643L0.484815 6.83367L0.319743 6.95565C0.231302 7.01953 0.113142 7.1824 0.0657449 7.31629C-0.0112326 7.53168 -0.00543762 7.5783 0.0824619 7.7591C0.135216 7.8699 0.252607 8.00998 0.340778 8.06844C0.493658 8.16782 1.12364 8.17503 14.1294 8.22134L27.7592 8.26319L24.8915 11.0999C23.3102 12.6577 21.9884 14.0064 21.9587 14.0937C21.8107 14.472 21.9571 14.8277 22.3218 14.98C22.7336 15.1499 22.651 15.2196 26.4982 11.4238C28.9174 9.0406 30.0976 7.83727 30.1214 7.72663C30.1451 7.63929 30.1454 7.49947 30.1221 7.4062C30.0988 7.30129 28.9298 6.09856 26.5506 3.72217C23.531 0.715166 22.7672 -0.00312928 22.6199 0.0431444C22.6081 0.0431183 22.5256 0.0720353 22.4313 0.0952265Z" />
-                                                </svg></span></a></li>
-                                    <li><a href="#"><span>Entertainment</span><span><svg width="31" height="16"
-                                                    viewBox="0 0 31 16" xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M22.4313 0.0952265C22.0661 0.205017 21.8592 0.57746 21.9525 0.950568C21.9758 1.06122 22.9569 2.0713 24.8779 3.98646L27.7623 6.865L14.1265 6.84643L0.484815 6.83367L0.319743 6.95565C0.231302 7.01953 0.113142 7.1824 0.0657449 7.31629C-0.0112326 7.53168 -0.00543762 7.5783 0.0824619 7.7591C0.135216 7.8699 0.252607 8.00998 0.340778 8.06844C0.493658 8.16782 1.12364 8.17503 14.1294 8.22134L27.7592 8.26319L24.8915 11.0999C23.3102 12.6577 21.9884 14.0064 21.9587 14.0937C21.8107 14.472 21.9571 14.8277 22.3218 14.98C22.7336 15.1499 22.651 15.2196 26.4982 11.4238C28.9174 9.0406 30.0976 7.83727 30.1214 7.72663C30.1451 7.63929 30.1454 7.49947 30.1221 7.4062C30.0988 7.30129 28.9298 6.09856 26.5506 3.72217C23.531 0.715166 22.7672 -0.00312928 22.6199 0.0431444C22.6081 0.0431183 22.5256 0.0720353 22.4313 0.0952265Z" />
-                                                </svg></span></a></li>
-                                    <li><a href="#"><span>New Technology</span><span><svg width="31" height="16"
-                                                    viewBox="0 0 31 16" xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M22.4313 0.0952265C22.0661 0.205017 21.8592 0.57746 21.9525 0.950568C21.9758 1.06122 22.9569 2.0713 24.8779 3.98646L27.7623 6.865L14.1265 6.84643L0.484815 6.83367L0.319743 6.95565C0.231302 7.01953 0.113142 7.1824 0.0657449 7.31629C-0.0112326 7.53168 -0.00543762 7.5783 0.0824619 7.7591C0.135216 7.8699 0.252607 8.00998 0.340778 8.06844C0.493658 8.16782 1.12364 8.17503 14.1294 8.22134L27.7592 8.26319L24.8915 11.0999C23.3102 12.6577 21.9884 14.0064 21.9587 14.0937C21.8107 14.472 21.9571 14.8277 22.3218 14.98C22.7336 15.1499 22.651 15.2196 26.4982 11.4238C28.9174 9.0406 30.0976 7.83727 30.1214 7.72663C30.1451 7.63929 30.1454 7.49947 30.1221 7.4062C30.0988 7.30129 28.9298 6.09856 26.5506 3.72217C23.531 0.715166 22.7672 -0.00312928 22.6199 0.0431444C22.6081 0.0431183 22.5256 0.0720353 22.4313 0.0952265Z" />
-                                                </svg></span></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    
                     <div class="blog-widget-item wow animate fadeInUp" data-wow-delay="800ms"
                         data-wow-duration="1500ms">
                         <div class="tag-area">
                             <div class="sidebar-widget-title">
-                                <h4>Follow Me</h4>
+                                <h4>Bizi Takip Edin</h4>
                                 <span></span>
                             </div>
                             <div class="blog-widget-body">
@@ -231,7 +119,7 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
+                    </div> 
                 </div>
             </div>
         </div>

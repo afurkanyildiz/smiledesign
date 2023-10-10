@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
-from smiledesign_home.views import home_page,about_page,services_page,doctors_page, blog_page,contact_page,blog_detail_page,services_detail_page
+from smiledesign_home.views import home_page,about_page,services_page,doctors_page, blog_page,contact_page,blog_detail_page,services_detail_page,doctor_details_page,contact_form_view
 
 
 urlpatterns = [
@@ -31,6 +31,8 @@ urlpatterns = [
     path('contact/', contact_page, name='contact_page'),
     path('blog/<int:id>/', blog_detail_page, name='blog_detail_page'),
     path('services/<int:id>/', services_detail_page, name='services_detail_page'),
+    path('doctor/<int:id>/', doctor_details_page, name='doctor_details_page'),
+    path('contact_form_submit/', contact_form_view, name='contact_form_view'),
     path('admin/', admin.site.urls),
 ]
 

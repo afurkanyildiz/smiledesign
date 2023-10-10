@@ -3,34 +3,34 @@
 
 {% block container %}
 
-<div class="inner-page-banner">
-    <div class="inner-banner-top">
-        <img class="inner-banner-vec-2 img-fluid " src="{% static 'images/bg/inner-banner-vec-1.png' %}" alt="">
-        <img class="inner-banner-vec-1 img-fluid" src="{% static 'images/bg/inner-banner-vec-2.png' %}" alt="">
+<div class="inner-page-banner-doctors">
+    <div class="inner-banner-top-doctors">
+        <img class="inner-banner-vec-2-doctors img-fluid " src="{% static 'images/bg/inner-banner-vec-1.png' %}" alt="">
+        <img class="inner-banner-vec-1-doctors img-fluid" src="{% static 'images/bg/inner-banner-vec-2.png' %}" alt="">
         <div class="container">
             <div class="row">
                 <div class="col-xl-8">
-                    <div class="inner-banner-title">
-                        <h2>I Provided Alawyes <br>
-                        <span>Creative Work.</span></h2>
+                    <div class="inner-banner-title-doctors">
+                        <h2>Yeni Gülüş <br>
+                        <span>Yeni Hayat.</span></h2>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="breadcrumb-area">
+        <div class="breadcrumb-area-doctors">
            <div class="container">
                <div class="row">
-                   <div class="col-12 d-flex justify-content-sm-end justify-content-center">
-                        <div class="inner-breadcrumb">
-                            <h2>Project 01</h2>
+                   <!-- <div class="col-12 d-flex justify-content-sm-end justify-content-center">
+                        <div class="inner-breadcrumb-doctors">
+                            <h2>Doktorlarımız</h2>
                             <nav>
-                                <ol class="breadcrumb">
-                                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                  <li class="breadcrumb-item active" aria-current="page">Project 01</li>
+                                <ol class="breadcrumb-doctors">
+                                  <li class="breadcrumb-item-doctors"><a href="index.html">Ana Sayfa</a></li>
+                                  <li class="breadcrumb-item-doctors active" aria-current="page">Doktorlarımız</li>
                                 </ol>
                               </nav>
                         </div>
-                   </div>
+                   </div> -->
                </div>
            </div>
         </div>
@@ -47,9 +47,9 @@
                     <div class="works-top d-flex justify-content-between align-items-center flex-wrap">
                         <div class="section-title1">
                             {% comment %} <span>Doctors</span> {% endcomment %}
-                            <h2>Doctors</h2>
+                            <h2>Doktorlarımız</h2>
                         </div>
-                        <div class="works-tab-btn-area d-flex align-items-center">
+                        <!-- <div class="works-tab-btn-area d-flex align-items-center">
                             <ul class="d-flex flex-wrap">
                                 <li data-filter=".all">All</li>
                                 <li data-filter=".web">Website</li>
@@ -68,7 +68,7 @@
                                         d="M10.3259 26.6155C10.1071 26.7248 10 26.9343 10 27.2531C10 27.581 10.1027 27.7996 10.317 27.918C10.4598 27.9954 10.7634 28 17.1429 28C23.5223 28 23.8259 27.9954 23.9688 27.918C24.1786 27.8042 24.2857 27.581 24.2857 27.2713C24.2857 26.9616 24.1786 26.7385 23.9688 26.6246C23.8259 26.5472 23.5223 26.5427 17.1429 26.5427C11.1161 26.5427 10.4554 26.5518 10.3259 26.6155Z" />
                                 </svg>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -87,9 +87,9 @@
                                 <span>{{ doctor.doctor_name }}</span>
                                 <h3>{{ doctor.field_of_expertise }}</h3>
                             </div>
-                            <div class="case-button">
-                                <a href="project-details.html">Examine</a>
-                            </div>
+                            <!-- <div class="case-button">
+                                <a href="{% url 'doctor_details_page' id=doctor.pk %}">Examine</a>
+                            </div> -->
                         </div>
                     </div>
                 </div>

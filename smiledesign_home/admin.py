@@ -1,7 +1,9 @@
 from django.contrib import admin
 from .models import Blog,Doctors,Services
+from django.db import models
+from ckeditor.widgets import CKEditorWidget
 
-
+formfield_overrides={models.TextField:{'widget':CKEditorWidget()}}
 class BlogAdmin(admin.ModelAdmin):
     list_display = [
         'title',

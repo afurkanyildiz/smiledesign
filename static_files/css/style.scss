@@ -6596,7 +6596,7 @@ header.style-4 {
     }
 }
 /*================================================
-37. Inner Page banner
+37. Inner Page banner(About)
 =================================================*/
 .inner-page-banner{
     .inner-banner-top{
@@ -6640,7 +6640,7 @@ header.style-4 {
         }
     }
     .breadcrumb-area{
-        background-image: url(../images/bg/inner-banner-img.png);
+        background-image: url(../images/ABOUT/ABOUT-1920-550.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
@@ -6704,6 +6704,448 @@ header.style-4 {
         }
     }
 }
+
+/*================================================
+37. Inner Page banner(Services)
+=================================================*/
+.inner-page-banner-services{
+    .inner-banner-top-services{
+        position: relative;
+        z-index: 1;
+        .inner-banner-vec-1-services{
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+        }
+        .inner-banner-vec-2-services{
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: -1;
+        }
+        .inner-banner-title-services{
+            padding-top: 120px;
+            h2{
+                font-family: $font-saira;
+                font-weight: 700;
+                font-size: 80px;
+                line-height: 120px;;
+                color: #020202;
+                span{
+                    color: $white;
+                }
+                @include lg-down-device(){
+                    font-size: 63px;
+                    line-height: 92px;
+                }
+                @include md-down-device(){
+                    font-size: 57px;
+                    line-height: 80px;
+                }
+                @include sm-down-device(){
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .breadcrumb-area-services{
+        background-image: url(../images/HİZMETLER/HİZMETLER.PNG);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 550px;
+        margin-top: -130px;
+        @include xxl-down-device(){
+            height: 380px;
+        }
+        @include lg-down-device(){
+            margin-top: -100px;
+        }
+        @include md-down-device(){
+            margin-top: -88px;
+        }
+        @include xsm-down-device(){
+            margin-top: -168px;
+        }
+        .inner-breadcrumb-services{
+            padding-top: 357px;
+            @include xxl-down-device(){
+                padding-top: 200px;
+            }
+            @include sm-down-device(){
+                padding-top: 230px;
+            }
+            h2{
+                font-family: $font-saira;
+                font-weight: 700;
+                font-size: 50px;
+                line-height: 79px;
+                color: $white;
+                @include sm-down-device(){
+                    font-size: 35px;
+                    line-height: 50px;
+                }
+            }
+            nav{
+                .breadcrumb-services{
+                    justify-content: end;
+                    @include sm-down-device(){
+                       justify-content: center;
+                    }
+                    .breadcrumb-item-services{
+                        font-family: $font-saira;
+                        font-weight: 400;
+                        font-size: 17px;
+                        color: #FFFFFF;
+                        a{
+                            color: $primary-color1;
+                        }
+                    }
+                    .breadcrumb-item+.breadcrumb-item-services::before {
+                        float: left;
+                        padding-right: 0.5rem;
+                        color: $white;
+                        content: url('../images/icons/breadcrumb-icon.svg');
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*================================================
+37. Inner Page banner(Blog)
+=================================================*/
+.inner-page-banner-blog{
+    .inner-banner-top-blog{
+        position: relative;
+        z-index: 1;
+        .inner-banner-vec-1-blog{
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+        }
+        .inner-banner-vec-2-blog{
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: -1;
+        }
+        .inner-banner-title-blog{
+            padding-top: 120px;
+            h2{
+                font-family: $font-saira;
+                font-weight: 700;
+                font-size: 80px;
+                line-height: 120px;;
+                color: #020202;
+                span{
+                    color: $white;
+                }
+                @include lg-down-device(){
+                    font-size: 63px;
+                    line-height: 92px;
+                }
+                @include md-down-device(){
+                    font-size: 57px;
+                    line-height: 80px;
+                }
+                @include sm-down-device(){
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .breadcrumb-area-blog{
+        background-image: url(../images/BLOG/BLOG-1920X550.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 550px;
+        margin-top: -130px;
+        @include xxl-down-device(){
+            height: 380px;
+        }
+        @include lg-down-device(){
+            margin-top: -100px;
+        }
+        @include md-down-device(){
+            margin-top: -88px;
+        }
+        @include xsm-down-device(){
+            margin-top: -168px;
+        }
+        .inner-breadcrumb-blog{
+            padding-top: 357px;
+            @include xxl-down-device(){
+                padding-top: 200px;
+            }
+            @include sm-down-device(){
+                padding-top: 230px;
+            }
+            h2{
+                font-family: $font-saira;
+                font-weight: 700;
+                font-size: 50px;
+                line-height: 79px;
+                color: $white;
+                @include sm-down-device(){
+                    font-size: 35px;
+                    line-height: 50px;
+                }
+            }
+            nav{
+                .breadcrumb-blog{
+                    justify-content: end;
+                    @include sm-down-device(){
+                       justify-content: center;
+                    }
+                    .breadcrumb-item-blog{
+                        font-family: $font-saira;
+                        font-weight: 400;
+                        font-size: 17px;
+                        color: #FFFFFF;
+                        a{
+                            color: $primary-color1;
+                        }
+                    }
+                    .breadcrumb-item+.breadcrumb-item-blog::before {
+                        float: left;
+                        padding-right: 0.5rem;
+                        color: $white;
+                        content: url('../images/icons/breadcrumb-icon.svg');
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*================================================
+37. Inner Page banner(Doctor)
+=================================================*/
+.inner-page-banner-doctors{
+    .inner-banner-top-doctors{
+        position: relative;
+        z-index: 1;
+        .inner-banner-vec-1-doctors{
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+        }
+        .inner-banner-vec-2-doctors{
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: -1;
+        }
+        .inner-banner-title-doctors{
+            padding-top: 120px;
+            h2{
+                font-family: $font-saira;
+                font-weight: 700;
+                font-size: 80px;
+                line-height: 120px;;
+                color: #020202;
+                span{
+                    color: $white;
+                }
+                @include lg-down-device(){
+                    font-size: 63px;
+                    line-height: 92px;
+                }
+                @include md-down-device(){
+                    font-size: 57px;
+                    line-height: 80px;
+                }
+                @include sm-down-device(){
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .breadcrumb-area-doctors{
+        background-image: url(../images/DOCTOR/DOKTORLAR-1920X550.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 550px;
+        margin-top: -130px;
+        @include xxl-down-device(){
+            height: 380px;
+        }
+        @include lg-down-device(){
+            margin-top: -100px;
+        }
+        @include md-down-device(){
+            margin-top: -88px;
+        }
+        @include xsm-down-device(){
+            margin-top: -168px;
+        }
+        .inner-breadcrumb-doctors{
+            padding-top: 357px;
+            @include xxl-down-device(){
+                padding-top: 200px;
+            }
+            @include sm-down-device(){
+                padding-top: 230px;
+            }
+            h2{
+                font-family: $font-saira;
+                font-weight: 700;
+                font-size: 50px;
+                line-height: 79px;
+                color: $white;
+                @include sm-down-device(){
+                    font-size: 35px;
+                    line-height: 50px;
+                }
+            }
+            nav{
+                .breadcrumb-doctors{
+                    justify-content: end;
+                    @include sm-down-device(){
+                       justify-content: center;
+                    }
+                    .breadcrumb-item-doctors{
+                        font-family: $font-saira;
+                        font-weight: 400;
+                        font-size: 17px;
+                        color: #FFFFFF;
+                        a{
+                            color: $primary-color1;
+                        }
+                    }
+                    .breadcrumb-item+.breadcrumb-item-doctors::before {
+                        float: left;
+                        padding-right: 0.5rem;
+                        color: $white;
+                        content: url('../images/icons/breadcrumb-icon.svg');
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*================================================
+37. Inner Page banner(Contact)
+=================================================*/
+.inner-page-banner-contact{
+    .inner-banner-top-contact{
+        position: relative;
+        z-index: 1;
+        .inner-banner-vec-1-contact{
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+        }
+        .inner-banner-vec-2-contact{
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: -1;
+        }
+        .inner-banner-title-contact{
+            padding-top: 120px;
+            h2{
+                font-family: $font-saira;
+                font-weight: 700;
+                font-size: 80px;
+                line-height: 120px;;
+                color: #020202;
+                span{
+                    color: $white;
+                }
+                @include lg-down-device(){
+                    font-size: 63px;
+                    line-height: 92px;
+                }
+                @include md-down-device(){
+                    font-size: 57px;
+                    line-height: 80px;
+                }
+                @include sm-down-device(){
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .breadcrumb-area-contact{
+        background-image: url(../images/CONTACT/CONTACT.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 550px;
+        margin-top: -130px;
+        @include xxl-down-device(){
+            height: 380px;
+        }
+        @include lg-down-device(){
+            margin-top: -100px;
+        }
+        @include md-down-device(){
+            margin-top: -88px;
+        }
+        @include xsm-down-device(){
+            margin-top: -168px;
+        }
+        .inner-breadcrumb-contact{
+            padding-top: 357px;
+            @include xxl-down-device(){
+                padding-top: 200px;
+            }
+            @include sm-down-device(){
+                padding-top: 230px;
+            }
+            h2{
+                font-family: $font-saira;
+                font-weight: 700;
+                font-size: 50px;
+                line-height: 79px;
+                color: $white;
+                @include sm-down-device(){
+                    font-size: 35px;
+                    line-height: 50px;
+                }
+            }
+            nav{
+                .breadcrumb-contact{
+                    justify-content: end;
+                    @include sm-down-device(){
+                       justify-content: center;
+                    }
+                    .breadcrumb-item-contact{
+                        font-family: $font-saira;
+                        font-weight: 400;
+                        font-size: 17px;
+                        color: #FFFFFF;
+                        a{
+                            color: $primary-color1;
+                        }
+                    }
+                    .breadcrumb-item+.breadcrumb-item-contact::before {
+                        float: left;
+                        padding-right: 0.5rem;
+                        color: $white;
+                        content: url('../images/icons/breadcrumb-icon.svg');
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 
 /*================================================
 38. About Page

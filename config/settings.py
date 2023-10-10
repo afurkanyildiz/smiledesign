@@ -34,21 +34,44 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
-BASE_APPS = [
+# BASE_APPS = [
+#     'django.contrib.admin',
+#     'django.contrib.auth',
+#     'django.contrib.contenttypes',
+#     'django.contrib.sessions',
+#     'django.contrib.messages',
+#     'django.contrib.staticfiles',
+# ]
+# THIRD_PARTY_APPS = [
+#     'ckeditor',
+# ]
+
+# MY_APPS = [
+#     'smiledesign_home',
+# ]
+
+INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-]
-THIRD_PARTY_APPS = []
-
-MY_APPS = [
     'smiledesign_home',
+    'ckeditor',
 ]
 
-INSTALLED_APPS = BASE_APPS + THIRD_PARTY_APPS + MY_APPS
+CKEDITOR_BASEPATH = '/static_files/ckeditor/ckeditor/'
+
+CKEDITOR_UPLOAD_PATH = "uploads/"
+
+CKEDITOR_CONFIGS = {
+    'default' : {
+        'toolbar': 'full',
+        'height': 300,
+    },
+}
+# = BASE_APPS + THIRD_PARTY_APPS + MY_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -138,6 +161,18 @@ STATIC_ROOT = BASE_DIR / 'static_collected'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+# EMAIL_HOST = 'smtp.gmail.com'
+
+# EMAIL_PORT = 587
+
+# EMAIL_USE_TLS = True
+
+# EMAIL_HOST_USER = 'afurkanyildizz@gmail.com'
+
+# EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
 
 
 # Default primary key field type

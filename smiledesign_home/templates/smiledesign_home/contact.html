@@ -2,33 +2,33 @@
 {% load static %}
 
 {% block container %}
-<div class="inner-page-banner">
-    <div class="inner-banner-top">
-        <img class="inner-banner-vec-2 img-fluid " src="{% static 'images/bg/inner-banner-vec-1.png' %}" alt="">
-        <img class="inner-banner-vec-1 img-fluid" src="{% static 'images/bg/inner-banner-vec-2.png' %}" alt="">
+<div class="inner-page-banner-contact">
+    <div class="inner-banner-top-contact">
+        <img class="inner-banner-vec-2-contact img-fluid " src="{% static 'images/bg/inner-banner-vec-1.png' %}" alt="">
+        <img class="inner-banner-vec-1-contact img-fluid" src="{% static 'images/bg/inner-banner-vec-2.png' %}" alt="">
         <div class="container">
             <div class="row">
                 <div class="col-xl-8">
-                    <div class="inner-banner-title">
-                        <h2>I Provided Alawyes <br>
-                        <span>Creative Work.</span></h2>
+                    <div class="inner-banner-title-contact">
+                        <h2>Yeni Gülüş <br>
+                        <span>Yeni Hayat.</span></h2>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="breadcrumb-area">
+        <div class="breadcrumb-area-contact">
            <div class="container">
                <div class="row">
                    <div class="col-12 d-flex justify-content-sm-end justify-content-center">
-                        <div class="inner-breadcrumb">
-                            <h2>Contact Now</h2>
+                        <div class="inner-breadcrumb-contact">
+                            <!-- <h2>Contact Now</h2>
                             <nav>
-                                <ol class="breadcrumb">
-                                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                  <li class="breadcrumb-item active" aria-current="page">Contact Now</li>
+                                <ol class="breadcrumb-contact">
+                                  <li class="breadcrumb-item-contact"><a href="index.html">Home</a></li>
+                                  <li class="breadcrumb-item-contact active" aria-current="page">Contact Now</li>
                                 </ol>
                               </nav>
-                        </div>
+                        </div> -->
                    </div>
                </div>
            </div>
@@ -50,7 +50,7 @@
                             <i class='bx bx-phone-call'></i>
                         </div>
                         <div class="content">
-                            <h3>Phone</h3>
+                            <h3>Telefon</h3>
                             <a href="tel:+8801761111456">+880 176 1111 456</a><br>
                             <a href="tel:+8801761111456">+880 176 1111 456</a>
                         </div>
@@ -69,27 +69,33 @@
             </div>
             <div class="col-lg-8 wow animate fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
                 <div class="contact-form-area mb-120">
-                    <h2>Let Start A Project.</h2>
-                    <form>
+                    <h2>Bizimle İletişime Geçin.</h2>
+                    <form method="post" action="{% url 'contact_form_view' %}">
+                        {% csrf_token %}
                         <div class="row">
                             <div class="col-12">
                                 <div class="form-inner">
-                                    <input type="text" placeholder="Enter your name">
+                                    <input type="text" id="username" name="username" placeholder="İsminizi Giriniz">
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-inner">
-                                    <input type="email" placeholder="Enter your email">
+                                    <input type="tel" id="telephone" name="telephone" placeholder="Telefon Numaranizi Giriniz">
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-inner">
-                                    <textarea placeholder="Your message" cols="30" rows="10"></textarea>
+                                    <input type="email" id="email" name="email" placeholder="Email Adresini Giriniz">
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-inner">
-                                    <button  class="eg-btn btn--primary btn--md form--btn" type="submit">Send Message</button>
+                                    <textarea placeholder="Mesajiniz" id="description" name="description" cols="30" rows="10"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-inner">
+                                    <button  class="eg-btn btn--primary btn--md form--btn" type="submit">İletişime Geç</button>
                                 </div>
                             </div>
                         </div>

@@ -3,33 +3,33 @@
 
 {% block container %}
 
-<div class="inner-page-banner">
-    <div class="inner-banner-top">
-        <img class="inner-banner-vec-2 img-fluid " src="assets/images/bg/inner-banner-vec-1.png" alt="">
-        <img class="inner-banner-vec-1 img-fluid" src="assets/images/bg/inner-banner-vec-2.png" alt="">
+<div class="inner-page-banner-blog">
+    <div class="inner-banner-top-blog">
+        <img class="inner-banner-vec-2-blog img-fluid " src="assets/images/bg/inner-banner-vec-1.png" alt="">
+        <img class="inner-banner-vec-1-blog img-fluid" src="assets/images/bg/inner-banner-vec-2.png" alt="">
         <div class="container">
             <div class="row">
                 <div class="col-xl-8">
-                    <div class="inner-banner-title">
+                    <div class="inner-banner-title-blog">
                         <h2>I Provided Alawyes <br>
                         <span>Creative Work.</span></h2>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="breadcrumb-area">
+        <div class="breadcrumb-area-blog">
             <div class="container">
                 <div class="row">
                     <div class="col-12 d-flex justify-content-sm-end justify-content-center">
-                        <div class="inner-breadcrumb">
+                        <!-- <div class="inner-breadcrumb-blog">
                             <h2>Blog Details</h2>
                             <nav>
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Blog Details</li>
+                                <ol class="breadcrumb-blog">
+                                    <li class="breadcrumb-item-blog"><a href="index.html">Home</a></li>
+                                    <li class="breadcrumb-item-blog active" aria-current="page">Blog Details</li>
                                 </ol>
                                 </nav>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -45,40 +45,18 @@
             <div class="col-lg-8 order-lg-1 order-2 wow animate fadeInDown" data-wow-delay="200ms" data-wow-duration="1500ms">
                 <div class="blog-dt-wrrap">
                     <div class="blog-dt-img">
-                        <img class="img-fluid" src="{{ blog.image.url }}" alt="">
+                        <img class="img-fluid" src="{{ blog.thumbnail_large.url }}" alt="">
                     </div>
                     <div class="blog-dt-content">
                         <div class="publisher-area">
                             <ul>
                                 <li><i class='bx bx-user'></i>By, Admin</li>
                                 <li><i class='bx bx-calendar'></i>25 May, 2022</li>
-                                <li><i class="bi bi-chat-dots"></i>Comments (02)</li>
+                                <!-- <li><i class="bi bi-chat-dots"></i>Yoru (02)</li> -->
                             </ul>
                         </div>
-                        <h2>Nullam feugiat et quam in accumsan.</h2>
-                        <p class="para">Sed pretium purus ultricies nunc vehicula eleifend. Cras ut ligula sed eros tempor euismod. Praesent nona sodales neque. Maecenas a finibus metus, et consequat lorem. Maecenas tempus consectetur finibus.velit Morbi vel efficitur augue. Sed in accumsan turpis, vel fringilla arcu. Sed sit amet turpis a arcu feugiat telal porttitor. Donec sodales purus mauris, nec mollis nulla sodales vitae. Nulla elit ex, faucibus ac facilisis andi velaAliquam erat volutpat. Nulla gravida vehicula mattis. Pellentesque vel lectus eget elit pulvinar thoseni condimentum in ut felis. Donec ut mi et nisl vestibulum rhoncus. Nam et ultrices ipsum. posuere, blandit go eget augue Integer condimentum.</p>  
-                
-                        <p class="para mb-40">Aliquam erat volutpat. Nulla gravida vehicula mattis. Pellentesque vel lectus eget elit pulvinar for this gooi condimentum in ut felis. Donec ut mi et nisl vestibulum rhoncus. Nam et ultrices ipsum. Integer in massage eget turpis consequat molestie. Vestibulum feugiat semper leo eget sagittis. Duis sed odio vulputatelcoma lorem posuere tincidunt.</p>  
-                        {% comment %} <div class="blog-tag">
-                            <div class="row g-3">
-                                <div class="col-md-6 d-flex justify-content-md-start justify-content-center align-items-center">
-                                    <h4>Share On:</h4>
-                                    <ul class="social-icon d-flex align-items-center flex-wrap">
-                                        <li><a href="https://www.facebook.com/"><i class="bx bxl-facebook"></i></a></li>
-                                        <li><a href="https://twitter.com/"><i class="bx bxl-twitter"></i></a></li>
-                                        <li><a href="https://www.pinterest.com/"><i class="bx bxl-pinterest-alt"></i></a></li>
-                                        <li><a href="https://www.instagram.com/"><i class="bx bxl-instagram"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-6 d-flex justify-content-md-end justify-content-center align-items-center">
-                                    <ul class="tag-list d-flex flex-wrap">
-                                        <li><a href="#">Website</a></li>
-                                        <li><a href="#">Web Design</a></li>
-                                        <li><a href="#">Development</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div> {% endcomment %}
+                        <h2>{{ blog.title }}</h2>
+                        <p class="para">{{ blog.content|safe }}</p>  
                         {% comment %} <div class="page-navigation-area">
                             <div class="row g-4">
                                 <div class="col-lg-3 d-flex ptt-20 align-items-center justify-content-center justify-content-lg-start">
@@ -188,48 +166,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="blog-widget-item wow animate fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
-                        <div class="blog-category">
-                            <div class="sidebar-widget-title">
-                                <h4>Recent Post</h4>
-                                <span></span>
-                            </div>
-                            <div class="blog-widget-body">
-                                <ul class="recent-post">
-                                    <li class="single-post d-flex align-items-center">
-                                        <div class="post-img">
-                                            <a href="blog-details.html"><img alt="image" src="assets/images/blog/blog-sb-1.png"></a>
-                                        </div>
-                                        <div class="post-content">
-                                            <h6><a href="blog-details.html">In a augue sit ametanibi erat Suspel...</a>
-                                            </h6>
-                                            <span><i class='bx bx-calendar'></i>25 May, 2022</span>
-                                        </div>
-                                    </li>
-                                    <li class="single-post d-flex align-items-center">
-                                        <div class="post-img">
-                                            <a href="blog-details.html"><img alt="image" src="assets/images/blog/blog-sb-2.png"></a>
-                                        </div>
-                                        <div class="post-content">
-                                            <h6><a href="blog-details.html">Interdum et malesuada famesa ac ante...</a>
-                                            </h6>
-                                            <span><i class='bx bx-calendar'></i>25 May, 2022</span>
-                                        </div>
-                                    </li>
-                                    <li class="single-post d-flex align-items-center">
-                                        <div class="post-img">
-                                            <a href="blog-details.html"><img alt="image" src="assets/images/blog/blog-sb-3.png"></a>
-                                        </div>
-                                        <div class="post-content">
-                                            <h6><a href="blog-details.html">tincidunt elementum nisl bland....</a>
-                                            </h6>
-                                            <span><i class='bx bx-calendar'></i>25 May, 2022</span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    
                     {% comment %} <div class="blog-widget-item wow animate fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
                         <div class="top-blog">
                             <div class="sidebar-widget-title">

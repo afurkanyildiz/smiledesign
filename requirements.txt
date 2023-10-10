@@ -3,14 +3,17 @@ asgiref==3.5.2
 distlib==0.3.6
 Django==4.1.4
 django-autoslug==1.9.9
+django-ckeditor==6.7.0
+django-js-asset==2.1.0
 djangorestframework==3.14.0
 filelock==3.9.0
 future @ file:///System/Volumes/Data/SWE/Apps/DT/BuildRoots/BuildRoot7/ActiveBuildRoot/Library/Caches/com.apple.xbs/Sources/python3/python3-133.100.1.1/future-0.18.2-py3-none-any.whl
 macholib @ file:///System/Volumes/Data/SWE/Apps/DT/BuildRoots/BuildRoot7/ActiveBuildRoot/Library/Caches/com.apple.xbs/Sources/python3/python3-133.100.1.1/macholib-1.15.2-py2.py3-none-any.whl
-Pillow==9.3.0
+Pillow==10.0.0
 platformdirs==2.6.2
 psycopg2-binary==2.9.5
+python-decouple==3.8
 pytz==2022.7
 six @ file:///System/Volumes/Data/SWE/Apps/DT/BuildRoots/BuildRoot7/ActiveBuildRoot/Library/Caches/com.apple.xbs/Sources/python3/python3-133.100.1.1/six-1.15.0-py2.py3-none-any.whl
-sqlparse==0.4.4
+sqlparse==0.4.3
 virtualenv==20.17.1

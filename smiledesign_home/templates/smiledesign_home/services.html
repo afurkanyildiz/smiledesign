@@ -3,34 +3,34 @@
 
 {% block container %}
         <!-- ========== breadcump Start============= -->
-        <div class="inner-page-banner">
-            <div class="inner-banner-top">
-                <img class="inner-banner-vec-2 img-fluid " src="{% static 'images/bg/inner-banner-vec-1.png' %}" alt="">
-                <img class="inner-banner-vec-1 img-fluid" src="{% static 'images/bg/inner-banner-vec-2.png' %}" alt="">
+        <div class="inner-page-banner-services">
+            <div class="inner-banner-top-services">
+                <img class="inner-banner-vec-2-services img-fluid " src="{% static 'images/bg/inner-banner-vec-1.png' %}" alt="">
+                <img class="inner-banner-vec-1-services img-fluid" src="{% static 'images/bg/inner-banner-vec-2.png' %}" alt="">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-8">
-                            <div class="inner-banner-title">
-                                <h2>I Provided Alawyes <br>
-                                <span>Creative Work.</span></h2>
+                            <div class="inner-banner-title-services">
+                                <h2>Yeni Gülüş <br>
+                                <span>Yeni Hayat.</span></h2>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="breadcrumb-area">
+                <div class="breadcrumb-area-services">
                    <div class="container">
                        <div class="row">
-                           <div class="col-12 d-flex justify-content-sm-end justify-content-center">
-                                <div class="inner-breadcrumb">
-                                    <h2>Services</h2>
+                           <!-- <div class="col-12 d-flex justify-content-sm-end justify-content-center">
+                                <div class="inner-breadcrumb-services">
+                                    <h2>Hizmetlerimiz</h2>
                                     <nav>
-                                        <ol class="breadcrumb">
-                                          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                          <li class="breadcrumb-item active" aria-current="page">Services</li>
+                                        <ol class="breadcrumb-services">
+                                          <li class="breadcrumb-item-services"><a href="index.html">Ana Sayfa</a></li>
+                                          <li class="breadcrumb-item-services active" aria-current="page">Servislerimiz</li>
                                         </ol>
                                       </nav>
                                 </div>
-                           </div>
+                           </div> -->
                        </div>
                    </div>
                 </div>
@@ -54,7 +54,7 @@
                                 <h3>{{ service.services_name }}</h3>
                             </div>
                             <div class="read-more-btn d-flex justify-content-end">
-                                <a href="{% url 'services_detail_page' id=service.pk %}">Read More <span><img src="{% static 'images/icons/arrow-right.svg' %}" alt=""></span></a>
+                                <a href="{% url 'services_detail_page' id=service.pk %}">Devamını Oku <span><img src="{% static 'images/icons/arrow-right.svg' %}" alt=""></span></a>
                             </div>
                         </div>
                     </div>  
@@ -91,7 +91,7 @@
                     </div>
                     <div class="col-lg-6 p-0 wow animate fadeInRight" data-wow-delay="400ms" data-wow-duration="1500ms">
                         <div class="service-process-img">
-                            <img src="{% static 'images/bg/service-process-img.png' %}" alt="">
+                            <img src="{% static 'images/HİZMETLER/SERVICES-960X600.png' %}" alt="">
                         </div>
                     </div>
                 </div>
@@ -338,8 +338,8 @@
                 <div class="row wow animate fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
                     <div class="col-12">
                         <div class="section-title1 text-center">
-                            <span>Testimonial</span>
-                            <h2>Client Say About Me</h2>
+                            <span>Referanslarımız</span>
+                            <h2>Müşteri Yorumları</h2>
                         </div>
                     </div>
                 </div>
@@ -349,13 +349,10 @@
                             <div class="swiper-slide">
                                 <div class="testimonial-wrrap d-lg-flex align-items-center">
                                     <div class="author-images1">
-                                        <img src="{% static 'images/bg/testimonial-1.png' %}" alt="">
+                                        <img src="{% static 'images/ABOUT/ABOUT-270X334.png' %}" alt="">
                                     </div>
                                     <div class="testimonial-content">
-                                        <p>Curabitur magna nisi, egestas quis est in, finibus pulvinar ipsum. Nunc sitaa amet do odio interdum, maximus dolor quis, ullamcorper lectus. Mauris vitaelai faucibus andi
-                                            libero. Curabitur eu convallis purus. Nunc accumsan diam in arcubl pellentesque foxt
-                                            odio interdum, maximus dolor quis, ullamcorper lectus. Mauris vitaelai faucibus andi
-                                            sagittis.</p>
+                                        <p>Uzun dişte' ("yaşlı" anlamına gelir) başlangıçta atları tanımlamak için kullanıldı. Atlar yaşlandıkça diş etleri çekilir, bu da dişlerinin büyüdüğü izlenimini verir. Dişler ne kadar uzun görünürse at o kadar yaşlı olur.</p>
                                         <div class="author-review d-flex align-items-center justify-content-between">
                                             <div class="author">
                                                 <h3>Savannah Nguyen</h3>
@@ -373,20 +370,17 @@
                                         </div>
                                     </div>
                                     <div class="author-images d-lg-block d-none">
-                                        <img src="{% static 'images/bg/testimonial-1.png' %}" alt="">
+                                        <img src="{% static 'images/ABOUT/ABOUT-270X334.png' %}" alt="">
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="testimonial-wrrap d-lg-flex align-items-center">
                                     <div class="author-images1">
-                                        <img src="{% static 'images/bg/testimonial-2.png' %}" alt="">
+                                        <img src="{% static 'images/ABOUT/ABOUT-270X334.png' %}" alt="">
                                     </div>
                                     <div class="testimonial-content">
-                                        <p>Curabitur magna nisi, egestas quis est in, finibus pulvinar ipsum. Nunc sitaa amet do odio interdum, maximus dolor quis, ullamcorper lectus. Mauris vitaelai faucibus andi
-                                            libero. Curabitur eu convallis purus. Nunc accumsan diam in arcubl pellentesque foxt
-                                            odio interdum, maximus dolor quis, ullamcorper lectus. Mauris vitaelai faucibus andi
-                                            sagittis.</p>
+                                        <p>Uzun dişte' ("yaşlı" anlamına gelir) başlangıçta atları tanımlamak için kullanıldı. Atlar yaşlandıkça diş etleri çekilir, bu da dişlerinin büyüdüğü izlenimini verir. Dişler ne kadar uzun görünürse at o kadar yaşlı olur.</p>
                                         <div class="author-review d-flex align-items-center justify-content-between">
                                             <div class="author">
                                                 <h3>
@@ -405,7 +399,7 @@
                                         </div>
                                     </div>
                                     <div class="author-images d-lg-block d-none">
-                                        <img src="{% static 'images/bg/testimonial-2.png' %}" alt="">
+                                        <img src="{% static 'images/ABOUT/ABOUT-270X334.png' %}" alt="">
                                     </div>
                                 </div>
                             </div>

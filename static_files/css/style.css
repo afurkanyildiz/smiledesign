@@ -8191,13 +8191,14 @@ header.style-4 .mobile-menu-btn .bx {
 }
 
 .inner-page-banner .breadcrumb-area {
-  background-image: url(../images/bg/inner-banner-img.png);
+  background-image: url(../images/ABOUT/ABOUT-1920-550.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   height: 550px;
   margin-top: -130px;
 }
+
 
 @media (max-width: 1399px) {
   .inner-page-banner .breadcrumb-area {
@@ -8280,6 +8281,622 @@ header.style-4 .mobile-menu-btn .bx {
 }
 
 .inner-page-banner .breadcrumb-area .inner-breadcrumb nav .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  float: left;
+  padding-right: 0.5rem;
+  color: #fff;
+  content: url("../images/icons/breadcrumb-icon.svg");
+}
+
+/*
+SERVICES
+*/
+.inner-page-banner-services .inner-banner-top-services {
+  position: relative;
+  z-index: 1;
+}
+
+.inner-page-banner-services .inner-banner-top-services .inner-banner-vec-1-services {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.inner-page-banner-services .inner-banner-top-services .inner-banner-vec-2-services {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.inner-page-banner-services .inner-banner-top-services .inner-banner-title-services {
+  padding-top: 120px;
+}
+
+.inner-page-banner-services .inner-banner-top-services .inner-banner-title-services h2 {
+  font-family: "Saira", sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 120px;
+  color: #020202;
+}
+
+.inner-page-banner-services .inner-banner-top-services .inner-banner-title-services h2 span {
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .inner-page-banner-services .inner-banner-top-services .inner-banner-title-services h2 {
+    font-size: 63px;
+    line-height: 92px;
+  }
+}
+
+@media (max-width: 767px) {
+  .inner-page-banner-services .inner-banner-top-services .inner-banner-title-services h2 {
+    font-size: 57px;
+    line-height: 80px;
+  }
+}
+
+@media (max-width: 576px) {
+  .inner-page-banner-services .inner-banner-top-services .inner-banner-title-services h2 {
+    text-align: center;
+  }
+}
+
+.inner-page-banner-services .breadcrumb-area-services {
+  background-image: url(../images/HİZMETLER/HİZMETLER.PNG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 550px;
+  margin-top: -130px;
+}
+
+@media (max-width: 1399px) {
+  .inner-page-banner-services .breadcrumb-area-services {
+    height: 380px;
+  }
+}
+
+@media (max-width: 991px) {
+  .inner-page-banner-services .breadcrumb-area-services {
+    margin-top: -100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .inner-page-banner-services .breadcrumb-area-services {
+    margin-top: -88px;
+  }
+}
+
+@media (max-width: 420px) {
+  .inner-page-banner-services .breadcrumb-area-services {
+    margin-top: -168px;
+  }
+}
+
+.inner-page-banner-services .breadcrumb-area-services .inner-breadcrumb-services {
+  padding-top: 357px;
+}
+
+@media (max-width: 1399px) {
+  .inner-page-banner-services .breadcrumb-area-services .inner-breadcrumb-services {
+    padding-top: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .inner-page-banner-services .breadcrumb-area-services .inner-breadcrumb-services {
+    padding-top: 230px;
+  }
+}
+
+.inner-page-banner-services .breadcrumb-area-services .inner-breadcrumb-services h2 {
+  font-family: "Saira", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 79px;
+  color: #fff;
+}
+
+@media (max-width: 576px) {
+  .inner-page-banner-services .breadcrumb-area-services .inner-breadcrumb-services h2 {
+    font-size: 35px;
+    line-height: 50px;
+  }
+}
+
+.inner-page-banner-services .breadcrumb-area-services .inner-breadcrumb-services nav .breadcrumb-services {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+@media (max-width: 576px) {
+  .inner-page-banner-services .breadcrumb-area-services .inner-breadcrumb-services nav .breadcrumb-services {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.inner-page-banner-services .breadcrumb-area-services .inner-breadcrumb-services nav .breadcrumb-services .breadcrumb-item-services {
+  font-family: "Saira", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  color: #FFFFFF;
+}
+
+.inner-page-banner-services .breadcrumb-area-services .inner-breadcrumb-services nav .breadcrumb-services .breadcrumb-item-services a {
+  color: #FF014F;
+}
+
+.inner-page-banner-services .breadcrumb-area-services .inner-breadcrumb-services nav .breadcrumb-services .breadcrumb-item-services + .breadcrumb-item-services::before {
+  float: left;
+  padding-right: 0.5rem;
+  color: #fff;
+  content: url("../images/icons/breadcrumb-icon.svg");
+}
+
+/*
+DOCTORS
+*/
+.inner-page-banner-doctors .inner-banner-top-doctors {
+  position: relative;
+  z-index: 1;
+}
+
+.inner-page-banner-doctors .inner-banner-top-doctors .inner-banner-vec-1-doctors {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.inner-page-banner-doctors .inner-banner-top-doctors .inner-banner-vec-2-doctors {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.inner-page-banner-doctors .inner-banner-top-doctors .inner-banner-title-doctors {
+  padding-top: 120px;
+}
+
+.inner-page-banner-doctors .inner-banner-top-doctors .inner-banner-title-doctors h2 {
+  font-family: "Saira", sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 120px;
+  color: #020202;
+}
+
+.inner-page-banner-doctors .inner-banner-top-doctors .inner-banner-title-doctors h2 span {
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .inner-page-banner-doctors .inner-banner-top-doctors .inner-banner-title-doctors h2 {
+    font-size: 63px;
+    line-height: 92px;
+  }
+}
+
+@media (max-width: 767px) {
+  .inner-page-banner-doctors .inner-banner-top-doctors .inner-banner-title-doctors h2 {
+    font-size: 57px;
+    line-height: 80px;
+  }
+}
+
+@media (max-width: 576px) {
+  .inner-page-banner-doctors .inner-banner-top-doctors .inner-banner-title-doctors h2 {
+    text-align: center;
+  }
+}
+
+.inner-page-banner-doctors .breadcrumb-area-doctors {
+  background-image: url(../images/DOCTOR/DOKTORLAR-1920X550.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 550px;
+  margin-top: -130px;
+}
+
+@media (max-width: 1399px) {
+  .inner-page-banner-doctors .breadcrumb-area-doctors {
+    height: 380px;
+  }
+}
+
+@media (max-width: 991px) {
+  .inner-page-banner-doctors .breadcrumb-area-doctors {
+    margin-top: -100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .inner-page-banner-doctors .breadcrumb-area-doctors {
+    margin-top: -88px;
+  }
+}
+
+@media (max-width: 420px) {
+  .inner-page-banner-doctors .breadcrumb-area-doctors {
+    margin-top: -168px;
+  }
+}
+
+.inner-page-banner-doctors .breadcrumb-area-doctors .inner-breadcrumb-doctors {
+  padding-top: 357px;
+}
+
+@media (max-width: 1399px) {
+  .inner-page-banner-doctors .breadcrumb-area-doctors .inner-breadcrumb-doctors {
+    padding-top: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .inner-page-banner-doctors .breadcrumb-area-doctors .inner-breadcrumb-doctors {
+    padding-top: 230px;
+  }
+}
+
+.inner-page-banner-doctors .breadcrumb-area-doctors .inner-breadcrumb-doctors h2 {
+  font-family: "Saira", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 79px;
+  color: #fff;
+}
+
+@media (max-width: 576px) {
+  .inner-page-banner-doctors .breadcrumb-area-doctors .inner-breadcrumb-doctors h2 {
+    font-size: 35px;
+    line-height: 50px;
+  }
+}
+
+.inner-page-banner-doctors .breadcrumb-area-doctors .inner-breadcrumb-doctors nav .breadcrumb-area-doctors {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+@media (max-width: 576px) {
+  .inner-page-banner-doctors .breadcrumb-area-doctors .inner-breadcrumb-doctors nav .breadcrumb-area-doctors {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.inner-page-banner-doctors .breadcrumb-area-doctors .inner-breadcrumb-doctors nav .breadcrumb-area-doctors .breadcrumb-item-doctors {
+  font-family: "Saira", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  color: #FFFFFF;
+}
+
+.inner-page-banner-doctors .breadcrumb-area-doctors .inner-breadcrumb-doctors nav .breadcrumb-area-doctors .breadcrumb-item-doctors a {
+  color: #FF014F;
+}
+
+.inner-page-banner-doctors .breadcrumb-area-doctors .inner-breadcrumb-doctors nav .breadcrumb-area-doctors .breadcrumb-item-doctors + .breadcrumb-item-doctors::before {
+  float: left;
+  padding-right: 0.5rem;
+  color: #fff;
+  content: url("../images/icons/breadcrumb-icon.svg");
+}
+
+/*================================================
+BLOG
+=================================================*/
+.inner-page-banner-blog .inner-banner-top-blog {
+  position: relative;
+  z-index: 1;
+}
+
+.inner-page-banner-blog .inner-banner-top-blog .inner-banner-vec-1-blog {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.inner-page-banner-blog .inner-banner-top-blog .inner-banner-vec-2-blog {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.inner-page-banner-blog .inner-banner-top-blog .inner-banner-title-blog {
+  padding-top: 120px;
+}
+
+.inner-page-banner-blog .inner-banner-top-blog .inner-banner-title-blog h2 {
+  font-family: "Saira", sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 120px;
+  color: #020202;
+}
+
+.inner-page-banner-blog .inner-banner-top-blog .inner-banner-title-blog h2 span {
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .inner-page-banner-blog .inner-banner-top-blog .inner-banner-title-blog h2 {
+    font-size: 63px;
+    line-height: 92px;
+  }
+}
+
+@media (max-width: 767px) {
+  .inner-page-banner-blog .inner-banner-top-blog .inner-banner-title-blog h2 {
+    font-size: 57px;
+    line-height: 80px;
+  }
+}
+
+@media (max-width: 576px) {
+  .inner-page-banner-blog .inner-banner-top-blog .inner-banner-title-blog h2 {
+    text-align: center;
+  }
+}
+
+.inner-page-banner-blog .breadcrumb-area-blog {
+  background-image: url(../images/BLOG/BLOG-1920X550.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 550px;
+  margin-top: -130px;
+}
+
+@media (max-width: 1399px) {
+  .inner-page-banner-blog .breadcrumb-area-blog {
+    height: 380px;
+  }
+}
+
+@media (max-width: 991px) {
+  .inner-page-banner-blog .breadcrumb-area-blog {
+    margin-top: -100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .inner-page-banner-blog .breadcrumb-area-blog {
+    margin-top: -88px;
+  }
+}
+
+@media (max-width: 420px) {
+  .inner-page-banner-blog .breadcrumb-area-blog {
+    margin-top: -168px;
+  }
+}
+
+.inner-page-banner-blog .breadcrumb-area-blog .inner-breadcrumb-blog {
+  padding-top: 357px;
+}
+
+@media (max-width: 1399px) {
+  .inner-page-banner-blog .breadcrumb-area-blog .inner-breadcrumb-blog {
+    padding-top: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .inner-page-banner-blog .breadcrumb-area-blog .inner-breadcrumb-blog {
+    padding-top: 230px;
+  }
+}
+
+.inner-page-banner-blog .breadcrumb-area-blog .inner-breadcrumb-blog h2 {
+  font-family: "Saira", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 79px;
+  color: #fff;
+}
+
+@media (max-width: 576px) {
+  .inner-page-banner-blog .breadcrumb-area-blog .inner-breadcrumb-blog h2 {
+    font-size: 35px;
+    line-height: 50px;
+  }
+}
+
+.inner-page-banner-blog .breadcrumb-area-blog .inner-breadcrumb-blog nav .breadcrumb-area-blog {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+@media (max-width: 576px) {
+  .inner-page-banner-blog .breadcrumb-area-blog .inner-breadcrumb-blog nav .breadcrumb-area-blog {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.inner-page-banner-blog .breadcrumb-area-blog .inner-breadcrumb-blog nav .breadcrumb-area-blog .breadcrumb-item-blog {
+  font-family: "Saira", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  color: #FFFFFF;
+}
+
+.inner-page-banner-blog .breadcrumb-area-blog .inner-breadcrumb-blog nav .breadcrumb-area-blog .breadcrumb-item-blog a {
+  color: #FF014F;
+}
+
+.inner-page-banner-blog .breadcrumb-area-blog .inner-breadcrumb-blog nav .breadcrumb-area-blog .breadcrumb-item-blog + .breadcrumb-item-blog::before {
+  float: left;
+  padding-right: 0.5rem;
+  color: #fff;
+  content: url("../images/icons/breadcrumb-icon.svg");
+}
+
+/*================================================
+Contact
+=================================================*/
+.inner-page-banner-contact .inner-banner-top-contact {
+  position: relative;
+  z-index: 1;
+}
+
+.inner-page-banner-contact .inner-banner-top-contact .inner-banner-vec-1-contact {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.inner-page-banner-contact .inner-banner-top-contact .inner-banner-vec-2-contact {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.inner-page-banner-contact .inner-banner-top-contact .inner-banner-title-contact {
+  padding-top: 120px;
+}
+
+.inner-page-banner-contact .inner-banner-top-contact .inner-banner-title-contact h2 {
+  font-family: "Saira", sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 120px;
+  color: #020202;
+}
+
+.inner-page-banner-contact .inner-banner-top-contact .inner-banner-title-contact h2 span {
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .inner-page-banner-contact .inner-banner-top-contact .inner-banner-title-contact h2 {
+    font-size: 63px;
+    line-height: 92px;
+  }
+}
+
+@media (max-width: 767px) {
+  .inner-page-banner-contact .inner-banner-top-contact .inner-banner-title-contact h2 {
+    font-size: 57px;
+    line-height: 80px;
+  }
+}
+
+@media (max-width: 576px) {
+  .inner-page-banner-contact .inner-banner-top-contact .inner-banner-title-contact h2 {
+    text-align: center;
+  }
+}
+
+.inner-page-banner-contact .breadcrumb-area-contact {
+  background-image: url(../images/CONTACT/CONTACT.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 550px;
+  margin-top: -130px;
+}
+
+@media (max-width: 1399px) {
+  .inner-page-banner-contact .breadcrumb-area-contact {
+    height: 380px;
+  }
+}
+
+@media (max-width: 991px) {
+  .inner-page-banner-contact .breadcrumb-area-contact {
+    margin-top: -100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .inner-page-banner-contact .breadcrumb-area-contact {
+    margin-top: -88px;
+  }
+}
+
+@media (max-width: 420px) {
+  .inner-page-banner-contact .breadcrumb-area-contact {
+    margin-top: -168px;
+  }
+}
+
+.inner-page-banner-contact .breadcrumb-area-contact .inner-breadcrumb-contact {
+  padding-top: 357px;
+}
+
+@media (max-width: 1399px) {
+  .inner-page-banner-contact .breadcrumb-area-contact .inner-breadcrumb-contact {
+    padding-top: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .inner-page-banner-contact .breadcrumb-area-contact .inner-breadcrumb-contact {
+    padding-top: 230px;
+  }
+}
+
+.inner-page-banner-contact .breadcrumb-area-contact .inner-breadcrumb-contact h2 {
+  font-family: "Saira", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 79px;
+  color: #fff;
+}
+
+@media (max-width: 576px) {
+  .inner-page-banner-contact .breadcrumb-area-contact .inner-breadcrumb-contact h2 {
+    font-size: 35px;
+    line-height: 50px;
+  }
+}
+
+.inner-page-banner-contact .breadcrumb-area-contact .inner-breadcrumb-contact nav .breadcrumb-area-contact {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+@media (max-width: 576px) {
+  .inner-page-banner-contact .breadcrumb-area-contact .inner-breadcrumb-contact nav .breadcrumb-area-contact {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.inner-page-banner-contact .breadcrumb-area-contact .inner-breadcrumb-contact nav .breadcrumb-area-contact .breadcrumb-item-contact {
+  font-family: "Saira", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  color: #FFFFFF;
+}
+
+.inner-page-banner-contact .breadcrumb-area-contact .inner-breadcrumb-contact nav .breadcrumb-area-contact .breadcrumb-item-contact a {
+  color: #FF014F;
+}
+
+.inner-page-banner-contact .breadcrumb-area-contact .inner-breadcrumb-contact nav .breadcrumb-area-contact .breadcrumb-item-contact + .breadcrumb-item-contact::before {
   float: left;
   padding-right: 0.5rem;
   color: #fff;
@@ -8616,7 +9233,7 @@ header.style-4 .mobile-menu-btn .bx {
      About-Contact
 =================================================*/
 .about-contact-area {
-  background: url(../images/bg/about-contact.png);
+  background: url(../images/ABOUT/ABOUT-1920X700.png);
   padding: 72px 0px;
   position: relative;
 }
